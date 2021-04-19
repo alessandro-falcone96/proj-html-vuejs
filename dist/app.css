@@ -62,8 +62,13 @@ header .headerCenter h4 {
   font-weight: 300;
   padding: 5px 0px 50px 0px;
 }
+header .headerCenter .btn:hover {
+  color: black;
+  border: 1px solid black;
+  background-color: white;
+}
 header .headerCenter .btnRosso {
-  border: none;
+  border: 1px solid #eb4b54;
   background-color: #eb4b54;
 }
 
