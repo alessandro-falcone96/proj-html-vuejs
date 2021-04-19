@@ -25,3 +25,26 @@ ul li a{
 p, a{
   color: $coloreText;
 }
+
+h2{
+  color: white;
+  font-size: $fontMedioGrande;
+  letter-spacing: 2px;
+  padding-top: 20px;
+}
+h3{
+  color: $coloreRossiccio;
+}
+.contenuto{
+  // border: 1px solid white;
+  text-align: center;
+  padding: 30px 0px;
+  width: 40%;
+  margin: auto;
+}
+
+hr{
+  width: 25%;
+  margin: 15px auto 15px auto;
+  border: 1px solid $coloreText;
+}

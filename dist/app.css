@@ -25,7 +25,31 @@ ul li a {
 }
 
 p, a {
-  color: #737376;
+  color: #7D7C8D;
+}
+
+h2 {
+  color: white;
+  font-size: 30px;
+  letter-spacing: 2px;
+  padding-top: 20px;
+}
+
+h3 {
+  color: #EC4857;
+}
+
+.contenuto {
+  text-align: center;
+  padding: 30px 0px;
+  width: 40%;
+  margin: auto;
+}
+
+hr {
+  width: 25%;
+  margin: 15px auto 15px auto;
+  border: 1px solid #7D7C8D;
 }
 
 header {
@@ -68,8 +92,159 @@ header .headerCenter .btn:hover {
   background-color: white;
 }
 header .headerCenter .btnRosso {
-  border: 1px solid #eb4b54;
-  background-color: #eb4b54;
+  border: 1px solid #EC4857;
+  background-color: #EC4857;
+}
+
+.primaSezione {
+  background-color: #323944;
+}
+
+.secondaSezione {
+  background-color: #252B33;
+}
+.secondaSezione .containerNews {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0px auto 0px auto;
+}
+.secondaSezione .containerNews .containerSinistra {
+  width: 66%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.secondaSezione .containerNews .containerSinistra div {
+  background-color: #323944;
+  border: 1px solid #323944;
+  cursor: pointer;
+  position: relative;
+}
+.secondaSezione .containerNews .containerSinistra div .container {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.secondaSezione .containerNews .containerSinistra div:hover .container {
+  opacity: 0;
+}
+.secondaSezione .containerNews .containerSinistra div:hover .overlay {
+  opacity: 1;
+}
+.secondaSezione .containerNews .containerSinistra div.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(236, 72, 87, 0.6);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.secondaSezione .containerNews .containerSinistra div.overlay h3.overlayTitle {
+  padding: 0;
+  color: white;
+}
+.secondaSezione .containerNews .containerSinistra div.technologyMusic, .secondaSezione .containerNews .containerSinistra div.rockFlavour {
+  width: 100%;
+}
+.secondaSezione .containerNews .containerSinistra div.technologyMusic img, .secondaSezione .containerNews .containerSinistra div.rockFlavour img {
+  width: 100%;
+  height: 100%;
+}
+.secondaSezione .containerNews .containerSinistra div.guitarWeeps, .secondaSezione .containerNews .containerSinistra div.soundsBetter {
+  width: 48%;
+  margin: 35px 0px;
+}
+.secondaSezione .containerNews .containerSinistra div.guitarWeeps img, .secondaSezione .containerNews .containerSinistra div.soundsBetter img {
+  width: 100%;
+  height: 100%;
+}
+.secondaSezione .containerNews .containerDestra {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.secondaSezione .containerNews .containerDestra div.oldSchool, .secondaSezione .containerNews .containerDestra div.stageLegend {
+  border: 1px solid #323944;
+  padding-bottom: 25px;
+  cursor: pointer;
+  height: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.secondaSezione .containerNews .containerDestra div.oldSchool .container, .secondaSezione .containerNews .containerDestra div.stageLegend .container {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #323944;
+}
+.secondaSezione .containerNews .containerDestra div.oldSchool:hover .container, .secondaSezione .containerNews .containerDestra div.stageLegend:hover .container {
+  opacity: 0;
+}
+.secondaSezione .containerNews .containerDestra div.oldSchool:hover .overlay, .secondaSezione .containerNews .containerDestra div.stageLegend:hover .overlay {
+  opacity: 1;
+}
+.secondaSezione .containerNews .containerDestra div.oldSchool .overlay, .secondaSezione .containerNews .containerDestra div.stageLegend .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(236, 72, 87, 0.6);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.secondaSezione .containerNews .containerDestra div.oldSchool .overlay h3.overlayTitle, .secondaSezione .containerNews .containerDestra div.stageLegend .overlay h3.overlayTitle {
+  padding: 0;
+  color: white;
+}
+.secondaSezione .containerNews .containerDestra div.oldSchool.oldSchool, .secondaSezione .containerNews .containerDestra div.stageLegend.oldSchool {
+  margin-bottom: 25px;
+}
+.secondaSezione .containerNews .containerDestra div.oldSchool img, .secondaSezione .containerNews .containerDestra div.stageLegend img {
+  width: 100%;
+  height: 105%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+.secondaSezione .containerNews h3 {
+  padding-top: 35px;
+  padding-left: 15px;
+}
+.secondaSezione .containerNews p {
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-bottom: 35px;
+}
+
+.terzaSezione, .sestaSezione {
+  background-color: #EC4857;
+  color: white;
+  text-align: center;
+  padding: 35px 0px;
+  cursor: pointer;
+}
+.terzaSezione:hover, .sestaSezione:hover {
+  color: black;
+  background-color: white;
+}
+.terzaSezione h4, .sestaSezione h4 {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.quintaSezione {
+  background-color: #252B33;
 }
 
 footer {
@@ -94,7 +269,7 @@ footer .footerTop {
 }
 footer .footerBottom {
   height: 10vh;
-  background-color: #272b34;
+  background-color: #252B33;
   padding-left: 30px;
   padding-right: 25px;
   display: flex;
@@ -104,7 +279,7 @@ footer .footerBottom {
 footer .footerBottom ul:first-child li a {
   font-size: 10px;
   font-weight: 400;
-  border-right: 1px solid #737376;
+  border-right: 1px solid #7D7C8D;
 }
 footer .footerBottom ul:first-child li:last-child a {
   border: none;

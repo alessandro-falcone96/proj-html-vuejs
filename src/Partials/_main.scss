@@ -1,0 +1,181 @@
+.primaSezione{
+  background-color: $coloreGrigioChiaro;
+}
+
+.secondaSezione{
+  background-color: $coloreGrigioScuro;
+
+  & .containerNews{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0px auto 0px auto;
+
+
+    & .containerSinistra{
+      width: 66%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      & div{
+        background-color: $coloreGrigioChiaro;
+        border: 1px solid $coloreGrigioChiaro;
+        cursor: pointer;
+        position: relative;
+
+        & .container{
+          width: 100%;
+          position: absolute;
+          bottom: 0;
+        }
+
+        &:hover .container{
+          opacity: 0;
+        }
+        &:hover .overlay{
+          opacity: 1;
+        }
+
+        &.overlay{
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background-color: rgba(236, 72, 87, 0.6);
+          opacity: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          & h3.overlayTitle{
+            padding: 0;
+            color: white;
+          }
+        }
+
+        &.technologyMusic, &.rockFlavour{
+          width: 100%;
+
+          & img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        &.guitarWeeps, &.soundsBetter{
+          width: 48%;
+          margin: 35px 0px;
+
+          & img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+      }
+    }
+
+    & .containerDestra{
+      width: 32%;
+      // border: 1px solid blue;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      & div.oldSchool, & div.stageLegend{
+        border: 1px solid $coloreGrigioChiaro;
+        padding-bottom: 25px;
+        cursor: pointer;
+        height: 50%;
+        position: relative;
+        overflow: hidden;
+        // border: 1px solid green;
+
+        & .container{
+          width: 100%;
+          position: absolute;
+          bottom: 0;
+          background-color: $coloreGrigioChiaro;
+          // border: 1px solid blue;
+        }
+
+        &:hover .container{
+          opacity: 0;
+        }
+
+        &:hover .overlay{
+          opacity: 1;
+        }
+
+
+        & .overlay{
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background-color: rgba(236, 72, 87, 0.6);
+          opacity: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          & h3.overlayTitle{
+            padding: 0;
+            color: white;
+          }
+        }
+
+        &.oldSchool{
+          margin-bottom: 25px;
+        }
+
+        & img{
+          width: 100%;
+          height: 105%;
+          // border: 1px solid green;
+          object-fit: cover;
+          object-position: center center;
+        }
+
+      }
+
+    }
+
+    & h3{
+      padding-top: 35px;
+      padding-left: 15px;
+    }
+
+    & p{
+      padding-top: 20px;
+      padding-left: 15px;
+      padding-bottom: 35px;
+    }
+  }
+}
+
+.terzaSezione, .sestaSezione{
+  background-color: $coloreRossiccio;
+  color: white;
+  text-align: center;
+  padding: 35px 0px;
+  cursor: pointer;
+
+  &:hover{
+    color: black;
+    background-color: white;
+  }
+
+  & h4{
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}
+
+.quintaSezione{
+  background-color: $coloreGrigioScuro;
+}
