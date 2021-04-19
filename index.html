@@ -67,9 +67,23 @@
 
         <div class="footerTop">
 
+          <img src="img/logo_footer.png" alt="">
+
+          <ul>
+            <li v-for="item in listaFooterTop"><a href="#">{{item}}</a></li>
+          </ul>
+
         </div>
 
         <div class="footerBottom">
+
+          <ul>
+            <li v-for="element in listaFooterBottom"><a href="#">{{element}}</a></li>
+          </ul>
+
+          <ul>
+            <li v-for="element in listaIconeSocial"><a href="#"><i class="fab fa-lg" :class="element"></i></a></li>
+          </ul>
 
         </div>
 

@@ -15,6 +15,19 @@
   cursor: pointer;
 }
 
+ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+p, a {
+  color: #737376;
+}
+
 header {
   height: 90vh;
   background-image: url("../img/home_slider.jpg");
@@ -52,4 +65,50 @@ header .headerCenter h4 {
 header .headerCenter .btnRosso {
   border: none;
   background-color: #eb4b54;
+}
+
+footer {
+  height: 25vh;
+  background-color: red;
+}
+footer ul li :hover {
+  color: white;
+}
+footer ul li a {
+  padding: 0px 10px;
+  font-weight: 300;
+}
+footer .footerTop {
+  height: 15vh;
+  background-color: #323944;
+  padding-left: 30px;
+  padding-right: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footerBottom {
+  height: 10vh;
+  background-color: #272b34;
+  padding-left: 30px;
+  padding-right: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footerBottom ul:first-child li a {
+  font-size: 10px;
+  font-weight: 400;
+  border-right: 1px solid #737376;
+}
+footer .footerBottom ul:first-child li:last-child a {
+  border: none;
+}
+footer .footerBottom ul:last-child li {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin: 5px;
+  background-color: #323944;
 }

@@ -14,3 +14,14 @@
   margin: 0px 5px;
   cursor: pointer;
 }
+
+ul li{
+  list-style: none;
+  display: inline-block;
+}
+ul li a{
+  text-decoration: none;
+}
+p, a{
+  color: $coloreText;
+}
