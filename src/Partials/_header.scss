@@ -1,0 +1,39 @@
+header{
+  height: 80vh;
+  background-image: url("../img/home_slider.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+
+  & .headerTop{
+    display: flex;
+    padding: 20px 50px;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid white;
+
+    & img, & i{
+      cursor: pointer;
+    }
+  }
+
+  & .headerCenter{
+    border: 1px solid white;
+    text-align: center;
+
+    & h1{
+      font-size: $fontGrande;
+      letter-spacing: 2px;
+      font-weight: 900;
+    }
+
+    & h4{
+      font-style: italic;
+      font-weight: 300;
+      padding: 5px 0px 30px 0px;
+    }
+
+
+  }
+
+}
