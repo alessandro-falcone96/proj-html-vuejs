@@ -5,6 +5,12 @@
   font-family: 'Roboto', sans-serif;
 }
 
-button{
-  padding: 5px 15px;
+.btn{
+  padding: 10px 25px;
+  color: white;
+  background-color: inherit;
+  border: 1px solid white;
+  text-transform: uppercase;
+  margin: 0px 5px;
+  cursor: pointer;
 }
