@@ -14,6 +14,18 @@
   text-transform: uppercase;
   margin: 0px 5px;
   cursor: pointer;
+
+}
+
+.btn:hover{
+  color: black;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.btnRosso{
+  border: 1px solid $coloreRossiccio;
+  background-color: $coloreRossiccio;
 }
 
 ul li{

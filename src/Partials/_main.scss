@@ -233,6 +233,7 @@
       padding: 20px 0px;
       margin: 10px 0px;
       letter-spacing: 3px;
+      cursor: pointer;
 
       & i{
         color: white;
@@ -248,6 +249,31 @@
       &:hover i{
         background-color: $coloreRossiccio;
         transition: 0.5s;
+      }
+
+      & .containerLuogoConcerto{
+        // border: 1px solid white;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        padding: 15px 0px;
+        transition: 2s;
+
+        & div{
+          // border: 1px solid green;
+          margin-left: 45px;
+
+          & h4{
+            color: white;
+          }
+
+          & p{
+            padding: 15px 0px;
+            line-height: 25px;
+          }
+        }
+
       }
     }
   }

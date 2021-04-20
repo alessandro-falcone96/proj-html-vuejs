@@ -16,6 +16,17 @@
   cursor: pointer;
 }
 
+.btn:hover {
+  color: black;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.btnRosso {
+  border: 1px solid #EC4857;
+  background-color: #EC4857;
+}
+
 ul li {
   list-style: none;
   display: inline-block;
@@ -92,15 +103,6 @@ header .headerCenter h4 {
   font-style: italic;
   font-weight: 300;
   padding: 50px 0px 50px 0px;
-}
-header .headerCenter .btn:hover {
-  color: black;
-  border: 1px solid black;
-  background-color: white;
-}
-header .headerCenter .btnRosso {
-  border: 1px solid #EC4857;
-  background-color: #EC4857;
 }
 
 .primaSezione {
@@ -300,6 +302,7 @@ header .headerCenter .btnRosso {
   padding: 20px 0px;
   margin: 10px 0px;
   letter-spacing: 3px;
+  cursor: pointer;
 }
 .quintaSezione .containerDate ul li i {
   color: white;
@@ -313,6 +316,24 @@ header .headerCenter .btnRosso {
 .quintaSezione .containerDate ul li:hover i {
   background-color: #EC4857;
   transition: 0.5s;
+}
+.quintaSezione .containerDate ul li .containerLuogoConcerto {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 15px 0px;
+  transition: 2s;
+}
+.quintaSezione .containerDate ul li .containerLuogoConcerto div {
+  margin-left: 45px;
+}
+.quintaSezione .containerDate ul li .containerLuogoConcerto div h4 {
+  color: white;
+}
+.quintaSezione .containerDate ul li .containerLuogoConcerto div p {
+  padding: 15px 0px;
+  line-height: 25px;
 }
 
 footer {

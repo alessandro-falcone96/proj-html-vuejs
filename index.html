@@ -158,7 +158,24 @@
           <div class="containerDate">
 
             <ul>
-              <li v-for="data in listaDate"><i class="fas fa-plus fa-xs"></i> {{data}}</li>
+              <li v-for="(item, index) in listaDate" @click="changeActiveIndex(index)">
+                <i class="fas fa-plus fa-xs"></i> {{item.data}}
+
+                <div class="containerLuogoConcerto" v-if="item.isActive == true">
+
+                  <img src="https://via.placeholder.com/300x200" alt="">
+
+                  <div class="">
+
+                    <h4>Untold Stories</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <button class="btn btnRosso" type="button" name="button">BOOK NOW</button>
+
+                  </div>
+
+                </div>
+
+              </li>
             </ul>
 
           </div>
