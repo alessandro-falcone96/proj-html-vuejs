@@ -170,10 +170,12 @@
   text-align: center;
   padding: 75px 0px;
   cursor: pointer;
+  transition: all .3s ease-in-out;
 
   &:hover{
     color: black;
     background-color: white;
+    transition: all .3s ease-in-out;
   }
 
   & h4{
@@ -187,6 +189,9 @@
   height: 90vh;
   // border: 1px solid orange;
   background-image: url("../img/home-testimonial-parallax.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   position: relative;
 
   & div{

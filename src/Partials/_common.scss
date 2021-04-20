@@ -14,13 +14,14 @@
   text-transform: uppercase;
   margin: 0px 5px;
   cursor: pointer;
-
+  transition: all .3s ease-in-out;
 }
 
 .btn:hover{
   color: black;
   border: 1px solid black;
   background-color: white;
+  transition: all .3s ease-in-out;
 }
 
 .btnRosso{
