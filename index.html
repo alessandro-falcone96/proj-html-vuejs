@@ -21,7 +21,20 @@
         <div class="headerTop">
 
           <a href="#app"><img src="img/avada-music-logo.png" alt=""></a>
-          <i><i class="fas fa-bars fa-2x"></i></i>
+          <i class="fas fa-bars fa-2x" @click="changeMenuActive"></i>
+
+        </div>
+
+        <div class="menu" v-if="isMenuActive == true">
+
+          <div class="headerMenu">
+            <a href="#app"><img src="img/avada-music-logo.png" alt=""></a>
+            <i class="fas fa-times fa-2x" @click="changeMenuActive"></i>
+          </div>
+
+          <ul>
+            <li v-for="item in listaMenu"><a href="#">{{item}}</a></li>
+          </ul>
 
         </div>
 

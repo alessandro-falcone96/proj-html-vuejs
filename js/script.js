@@ -10,6 +10,14 @@ var app = new Vue (
         "Albums",
         "Fans"
       ],
+      listaMenu: [
+        "Home",
+        "Meet The Band",
+        "Live Dates",
+        "Latest News",
+        "Albums",
+        "Fans"
+      ],
       listaFooterBottom: [
         "© Copyright 2012-2020",
         "AVADA THEME BY THEMEFUSION",
@@ -22,13 +30,6 @@ var app = new Vue (
         "fa-instagram",
         "fa-youtube"
       ],
-      // listaDate: [
-      //   "17/08/2020 GEM FESTIVAL 2020 ANAKALIA, GEORIGA",
-      //   "24/09/2020 GROOVEFEST DOMINICAL REPUBLIC",
-      //   "31/10/2020 OASIS FESTIVAL 2020 MARRAKECH, MOROCCO",
-      //   "07/11/2020 MOGA FESTIVAL - ESSAOURIA, MOROCCO",
-      //   "10/12/202 MOGA FESTIVAL - UVITA, COSTA RICA"
-      // ],
       listaDate: [
         {
           data: "17/08/2020 GEM FESTIVAL 2020 ANAKALIA, GEORIGA",
@@ -52,6 +53,7 @@ var app = new Vue (
         },
       ],
       indexLastActive: 0,
+      isMenuActive: false
     },
     mounted: function() {
 
@@ -66,7 +68,13 @@ var app = new Vue (
           this.indexLastActive = index;
         }
       },
-      
+      changeMenuActive: function() {
+        if (this.isMenuActive == false) {
+          this.isMenuActive = true;
+        } else {
+          this.isMenuActive = false;
+        }
+      }
     }
   }
 );
