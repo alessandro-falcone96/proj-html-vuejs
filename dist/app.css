@@ -326,8 +326,7 @@ header .headerCenter h4 {
   text-align: center;
   font-style: italic;
 }
-.quartaSezione div i {
-  color: #EC4857;
+.quartaSezione div img {
   padding-top: 30px;
   cursor: pointer;
 }
