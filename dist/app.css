@@ -128,9 +128,12 @@ header .headerCenter .btnRosso {
 }
 .secondaSezione .containerNews .containerSinistra div:hover .container {
   opacity: 0;
+  transition: all 0.5s ease-in-out;
+  transform: scale(0);
 }
 .secondaSezione .containerNews .containerSinistra div:hover .overlay {
   opacity: 1;
+  transition: all 0.5s ease-in-out;
 }
 .secondaSezione .containerNews .containerSinistra div.overlay {
   position: absolute;
@@ -185,9 +188,12 @@ header .headerCenter .btnRosso {
 }
 .secondaSezione .containerNews .containerDestra div.oldSchool:hover .container, .secondaSezione .containerNews .containerDestra div.stageLegend:hover .container {
   opacity: 0;
+  transition: all 0.5s ease-in-out;
+  transform: scale(0);
 }
 .secondaSezione .containerNews .containerDestra div.oldSchool:hover .overlay, .secondaSezione .containerNews .containerDestra div.stageLegend:hover .overlay {
   opacity: 1;
+  transition: all 0.5s ease-in-out;
 }
 .secondaSezione .containerNews .containerDestra div.oldSchool .overlay, .secondaSezione .containerNews .containerDestra div.stageLegend .overlay {
   position: absolute;

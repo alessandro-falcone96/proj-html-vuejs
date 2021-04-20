@@ -32,9 +32,12 @@
 
         &:hover .container{
           opacity: 0;
+          transition: all .5s ease-in-out;
+          transform: scale(0);
         }
         &:hover .overlay{
           opacity: 1;
+          transition: all .5s ease-in-out;
         }
 
         &.overlay{
@@ -103,10 +106,13 @@
 
         &:hover .container{
           opacity: 0;
+          transition: all .5s ease-in-out;
+          transform: scale(0);
         }
 
         &:hover .overlay{
           opacity: 1;
+          transition: all .5s ease-in-out;
         }
 
 
