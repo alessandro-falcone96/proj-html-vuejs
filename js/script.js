@@ -65,9 +65,8 @@ var app = new Vue (
           this.listaDate[index].isActive = true;
           this.indexLastActive = index;
         }
-
-
-      }
+      },
+      
     }
   }
 );

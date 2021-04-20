@@ -83,6 +83,11 @@ header .headerTop {
   padding: 20px 50px;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: #252B33;
 }
 header .headerTop img, header .headerTop i {
   cursor: pointer;
