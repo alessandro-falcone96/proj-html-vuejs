@@ -28,12 +28,12 @@
         <div class="menu" v-if="isMenuActive == true">
 
           <div class="headerMenu">
-            <a href="#app"><img src="img/avada-music-logo.png" alt=""></a>
+            <a href="#app" @click="changeMenuActive"><img src="img/avada-music-logo.png" alt=""></a>
             <i class="fas fa-times fa-2x" @click="changeMenuActive"></i>
           </div>
 
           <ul>
-            <li v-for="item in listaMenu"><a href="#">{{item}}</a></li>
+            <li v-for="item in listaMenu" @click="changeMenuActive"><a :href="item.link">{{item.name}}</a></li>
           </ul>
 
         </div>
@@ -62,7 +62,7 @@
 
         </section>
 
-        <section class="secondaSezione">
+        <section class="secondaSezione" id="latestNews">
           <div class="contenuto">
             <h2>Latest Band News</h2>
             <hr>
@@ -159,7 +159,7 @@
           </div>
         </section>
 
-        <section class="quintaSezione">
+        <section class="quintaSezione" id="liveDates">
           <div class="contenuto">
 
             <h2>Live Dates</h2>
@@ -172,11 +172,12 @@
 
             <ul>
               <li v-for="(item, index) in listaDate" @click="changeActiveIndex(index)">
-                <i class="fas fa-plus fa-xs"></i> {{item.data}}
+                <i v-if="item.isActive == true" class="fas fa-minus fa-xs"></i> {{item.data}}
+                <i v-else class="fas fa-plus fa-xs"></i> {{item.data}}
 
                 <div class="containerLuogoConcerto" v-if="item.isActive == true">
 
-                  <img src="https://via.placeholder.com/300x200" alt="">
+                  <img src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDsUcTjt43mTheN9ruCsQVgBE-wgN6_AfY&language=en&center=New+York&maptype=terrain&zoom=14&size=370x250&markers=icon:https://avada.theme-fusion.com/music/wp-content/uploads/sites/68/2017/09/custom_marker-1.png|New+York&scale=2" alt="">
 
                   <div class="">
 

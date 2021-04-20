@@ -108,12 +108,16 @@ header .menu .headerMenu {
 }
 header .menu .headerMenu i {
   cursor: pointer;
+  color: #aeaeaf;
+}
+header .menu .headerMenu i:hover {
+  color: white;
 }
 header .menu ul li {
   display: block;
   text-align: center;
-  font-size: 60px;
-  padding: 20px 0px;
+  font-size: 30px;
+  padding: 35px 0px;
 }
 header .menu ul li a {
   color: #aeaeaf;
@@ -366,6 +370,10 @@ header .headerCenter h4 {
   padding: 15px 0px;
   transition: 2s;
 }
+.quintaSezione .containerDate ul li .containerLuogoConcerto img {
+  height: 200px;
+  width: 300px;
+}
 .quintaSezione .containerDate ul li .containerLuogoConcerto div {
   margin-left: 45px;
 }
@@ -378,7 +386,7 @@ header .headerCenter h4 {
 }
 
 footer {
-  height: 25vh;
+  height: 35vh;
   background-color: red;
 }
 footer ul li :hover {
@@ -389,7 +397,7 @@ footer ul li a {
   font-weight: 300;
 }
 footer .footerTop {
-  height: 15vh;
+  height: 20vh;
   background-color: #323944;
   padding-left: 30px;
   padding-right: 25px;
@@ -398,7 +406,7 @@ footer .footerTop {
   align-items: center;
 }
 footer .footerBottom {
-  height: 10vh;
+  height: 15vh;
   background-color: #252B33;
   padding-left: 30px;
   padding-right: 25px;

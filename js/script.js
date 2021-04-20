@@ -10,13 +10,39 @@ var app = new Vue (
         "Albums",
         "Fans"
       ],
+      // listaMenu: [
+      //   "Home",
+      //   "Meet The Band",
+      //   "Live Dates",
+      //   "Latest News",
+      //   "Albums",
+      //   "Fans"
+      // ],
       listaMenu: [
-        "Home",
-        "Meet The Band",
-        "Live Dates",
-        "Latest News",
-        "Albums",
-        "Fans"
+        {
+          name: "Home",
+          link: "#app"
+        },
+        {
+          name: "Meet The Band",
+          link: "#"
+        },
+        {
+          name: "Live Dates",
+          link: "#liveDates"
+        },
+        {
+          name: "Latest News",
+          link: "#latestNews"
+        },
+        {
+          name: "Albums",
+          link: "#"
+        },
+        {
+          name: "Fans",
+          link: "#"
+        },
       ],
       listaFooterBottom: [
         "© Copyright 2012-2020",
@@ -32,7 +58,7 @@ var app = new Vue (
       ],
       listaDate: [
         {
-          data: "17/08/2020 GEM FESTIVAL 2020 ANAKALIA, GEORIGA",
+          data: "17/08/2020 GEM FESTIVAL 2020 ANAKLIA, GEORIGA",
           isActive: false
         },
         {

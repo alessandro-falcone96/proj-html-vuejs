@@ -44,14 +44,19 @@ header{
 
       & i{
         cursor: pointer;
+        color: #aeaeaf;
+
+        &:hover{
+          color: white;
+        }
       }
     }
 
     & ul li{
       display: block;
       text-align: center;
-      font-size: $fontMedioGrande;
-      padding: 20px 0px;
+      font-size: $fontMedio;
+      padding: 35px 0px;
 
       & a{
         color: #aeaeaf;

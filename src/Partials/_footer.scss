@@ -1,5 +1,5 @@
 footer{
-  height: 25vh;
+  height: 35vh;
   background-color: red;
 
   & ul li{
@@ -15,7 +15,7 @@ footer{
   }
 
   & .footerTop{
-    height: 15vh;
+    height: 20vh;
     background-color: $coloreGrigioChiaro;
     padding-left: 30px;
     padding-right: 25px;
@@ -28,7 +28,7 @@ footer{
   }
 
   & .footerBottom{
-    height: 10vh;
+    height: 15vh;
     background-color: $coloreGrigioScuro;
     padding-left: 30px;
     padding-right: 25px;
