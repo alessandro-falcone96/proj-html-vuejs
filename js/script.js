@@ -21,6 +21,13 @@ var app = new Vue (
         "fa-twitter",
         "fa-instagram",
         "fa-youtube"
+      ],
+      listaDate: [
+        "17/08/2020 GEM FESTIVAL 2020 ANAKALIA, GEORIGA",
+        "24/09/2020 GROOVEFEST DOMINICAL REPUBLIC",
+        "31/10/2020 OASIS FESTIVAL 2020 MARRAKECH, MOROCCO",
+        "07/11/2020 MOGA FESTIVAL - ESSAOURIA, MOROCCO",
+        "10/12/202 MOGA FESTIVAL - UVITA, COSTA RICA"
       ]
     },
     mounted: function() {
