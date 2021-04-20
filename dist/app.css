@@ -257,6 +257,34 @@ header .headerCenter .btnRosso {
   letter-spacing: 1px;
 }
 
+.quartaSezione {
+  height: 90vh;
+  background-image: url("../img/home-testimonial-parallax.jpg");
+  position: relative;
+}
+.quartaSezione div {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.quartaSezione div p {
+  color: white;
+  font-size: 30px;
+  line-height: 55px;
+  text-align: center;
+  font-style: italic;
+}
+.quartaSezione div i {
+  color: #EC4857;
+  padding-top: 30px;
+  cursor: pointer;
+}
+
 .quintaSezione {
   background-color: #252B33;
 }
