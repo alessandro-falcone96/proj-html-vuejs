@@ -4,6 +4,7 @@
 
 .secondaSezione{
   background-color: $coloreGrigioScuro;
+  padding-bottom: 100px;
 
   & .containerNews{
     display: flex;
@@ -167,7 +168,7 @@
   background-color: $coloreRossiccio;
   color: white;
   text-align: center;
-  padding: 35px 0px;
+  padding: 75px 0px;
   cursor: pointer;
 
   &:hover{
