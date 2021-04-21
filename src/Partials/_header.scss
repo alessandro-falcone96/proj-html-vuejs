@@ -58,8 +58,10 @@ header{
       font-size: $fontMedio;
       padding: 35px 0px;
 
+
       & a{
         color: #aeaeaf;
+        font-family: 'Montserrat', sans-serif;
 
         &:hover{
           color: white;
@@ -83,6 +85,7 @@ header{
       letter-spacing: 5px;
       font-weight: 900;
       // border: 1px solid white;
+      font-family: 'Montserrat', sans-serif;
     }
 
     & h4{
@@ -90,6 +93,7 @@ header{
       font-style: italic;
       font-weight: 300;
       padding: 50px 0px 50px 0px;
+      font-family: 'Merriweather', serif;
     }
 
 

@@ -159,12 +159,14 @@
     & h3{
       padding-top: 35px;
       padding-left: 15px;
+      font-family: 'Montserrat', sans-serif;
     }
 
     & p{
       padding-top: 20px;
       padding-left: 15px;
       padding-bottom: 35px;
+      font-family: 'Merriweather', serif;
     }
   }
 }
@@ -187,6 +189,7 @@
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-family: 'PT Sans', sans-serif;
   }
 }
 
@@ -216,6 +219,7 @@
       line-height: 55px;
       text-align: center;
       font-style: italic;
+      font-family: 'Merriweather', serif;
     }
 
     & img{
@@ -243,6 +247,7 @@
       margin: 10px 0px;
       letter-spacing: 3px;
       cursor: pointer;
+      font-family: 'Montserrat', sans-serif;
 
       & i{
         color: white;
@@ -280,11 +285,14 @@
 
           & h4{
             color: white;
+            font-weight: 400;
+            font-family: 'Montserrat', sans-serif;
           }
 
           & p{
             padding: 15px 0px;
             line-height: 25px;
+            font-family: 'Merriweather', serif;
           }
         }
 

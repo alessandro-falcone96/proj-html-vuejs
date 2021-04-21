@@ -15,6 +15,7 @@
   margin: 0px 5px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  font-family: "PT Sans", sans-serif;
 }
 
 .btn:hover {
@@ -47,6 +48,7 @@ h2 {
   font-size: 60px;
   letter-spacing: 2px;
   padding-top: 20px;
+  font-family: "Montserrat", sans-serif;
 }
 
 h3 {
@@ -62,6 +64,8 @@ h3 {
 .contenuto p {
   padding: 30px 0px;
   font-size: 20px;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
 }
 
 hr {
@@ -121,6 +125,7 @@ header .menu ul li {
 }
 header .menu ul li a {
   color: #aeaeaf;
+  font-family: "Montserrat", sans-serif;
 }
 header .menu ul li a:hover {
   color: white;
@@ -137,12 +142,14 @@ header .headerCenter h1 {
   font-size: 150px;
   letter-spacing: 5px;
   font-weight: 900;
+  font-family: "Montserrat", sans-serif;
 }
 header .headerCenter h4 {
   font-size: 20px;
   font-style: italic;
   font-weight: 300;
   padding: 50px 0px 50px 0px;
+  font-family: "Merriweather", serif;
 }
 
 .primaSezione {
@@ -280,11 +287,13 @@ header .headerCenter h4 {
 .secondaSezione .containerNews h3 {
   padding-top: 35px;
   padding-left: 15px;
+  font-family: "Montserrat", sans-serif;
 }
 .secondaSezione .containerNews p {
   padding-top: 20px;
   padding-left: 15px;
   padding-bottom: 35px;
+  font-family: "Merriweather", serif;
 }
 
 .terzaSezione, .sestaSezione {
@@ -304,6 +313,7 @@ header .headerCenter h4 {
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 1px;
+  font-family: "PT Sans", sans-serif;
 }
 
 .quartaSezione {
@@ -330,6 +340,7 @@ header .headerCenter h4 {
   line-height: 55px;
   text-align: center;
   font-style: italic;
+  font-family: "Merriweather", serif;
 }
 .quartaSezione div img {
   padding-top: 30px;
@@ -352,6 +363,7 @@ header .headerCenter h4 {
   margin: 10px 0px;
   letter-spacing: 3px;
   cursor: pointer;
+  font-family: "Montserrat", sans-serif;
 }
 .quintaSezione .containerDate ul li i {
   color: white;
@@ -383,10 +395,13 @@ header .headerCenter h4 {
 }
 .quintaSezione .containerDate ul li .containerLuogoConcerto div h4 {
   color: white;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
 }
 .quintaSezione .containerDate ul li .containerLuogoConcerto div p {
   padding: 15px 0px;
   line-height: 25px;
+  font-family: "Merriweather", serif;
 }
 
 footer {
@@ -398,7 +413,8 @@ footer ul li :hover {
 }
 footer ul li a {
   padding: 0px 10px;
-  font-weight: 300;
+  font-weight: 400;
+  font-family: "Merriweather", serif;
 }
 footer .footerTop {
   height: 20vh;
@@ -443,6 +459,7 @@ footer div:last-child {
   bottom: 0;
   right: 75px;
   border-radius: 5px;
+  z-index: 10;
 }
 footer div:last-child i {
   padding: 5px;
