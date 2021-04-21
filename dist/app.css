@@ -75,6 +75,13 @@ hr {
   border: 1px solid #7D7C8D;
 }
 
+.bordoSpesso {
+  width: 40%;
+  margin: auto;
+  height: 15px;
+  background-color: #EC4857;
+}
+
 #containerMainPage header {
   height: 100vh;
   background-image: url("../img/mainPage/home_slider.jpg");
@@ -155,11 +162,6 @@ hr {
 
 #containerMainPage .primaSezione {
   background-color: #323944;
-}
-#containerMainPage .primaSezione .contenuto h2 {
-  width: 60%;
-  margin: auto;
-  border-top: 15px solid #EC4857;
 }
 
 #containerMainPage .secondaSezione {
@@ -554,6 +556,45 @@ hr {
   font-weight: 300;
   padding: 50px 0px 50px 0px;
   font-family: "Merriweather", serif;
+}
+
+#containerLiveDates .primaSezione {
+  background-color: #323944;
+}
+#containerLiveDates .primaSezione .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  padding: 75px 0px;
+}
+#containerLiveDates .primaSezione .container img {
+  width: 48%;
+}
+#containerLiveDates .primaSezione .container .containerDescrizione {
+  width: 48%;
+}
+#containerLiveDates .primaSezione .container .containerDescrizione h2 {
+  text-align: center;
+}
+#containerLiveDates .primaSezione .container .containerDescrizione hr {
+  width: 50%;
+  margin-left: 0;
+}
+#containerLiveDates .primaSezione .container .containerDescrizione p {
+  margin-top: 35px;
+}
+#containerLiveDates .primaSezione .container .containerDescrizione p.descrizione {
+  line-height: 25px;
+  text-align: justify;
+}
+#containerLiveDates .primaSezione .container .containerDescrizione p i {
+  color: white;
+  margin-right: 15px;
+}
+#containerLiveDates .primaSezione .container .containerDescrizione p i.secondStar {
+  margin-left: 30px;
 }
 
 #containerLiveDates footer {

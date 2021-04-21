@@ -1,0 +1,62 @@
+#containerLiveDates .primaSezione{
+  background-color: $coloreGrigioChiaro;
+
+  & .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    // border: 1px solid blue;
+    padding: 75px 0px;
+
+    & img{
+      width: 48%;
+      // border: 1px solid green;
+    }
+
+    & .containerDescrizione{
+      width: 48%;
+      // border: 1px solid green;
+
+      & h2{
+        text-align: center;
+      }
+
+      & hr{
+        width: 50%;
+        margin-left: 0;
+      }
+
+      & p{
+        margin-top: 35px;
+
+        &.descrizione{
+          line-height: 25px;
+          text-align: justify;
+        }
+
+        & i{
+          color: white;
+          margin-right: 15px;
+
+          &.secondStar{
+            margin-left: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+#containerLiveDates .secondaSezione{
+
+}
+
+#containerLiveDates .terzaSezione{
+
+}
+
+#containerLiveDates .quartaSezione{
+
+}
