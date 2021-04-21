@@ -191,6 +191,7 @@ header .headerCenter h4 {
   bottom: 0;
   transition: all 0.5s ease-in-out;
   transform: scaleY(1);
+  z-index: 1;
 }
 .secondaSezione .containerNews .containerSinistra div:hover .container {
   transform: translateY(100%);
@@ -253,6 +254,7 @@ header .headerCenter h4 {
   background-color: #323944;
   transition: all 0.5s ease-in-out;
   transform: scaleY(1);
+  z-index: 1;
 }
 .secondaSezione .containerNews .containerDestra div.oldSchool:hover .container, .secondaSezione .containerNews .containerDestra div.stageLegend:hover .container {
   transform: translateY(100%);

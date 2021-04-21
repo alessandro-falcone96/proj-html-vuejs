@@ -39,6 +39,7 @@
           bottom: 0;
           transition: all .5s ease-in-out;
           transform: scaleY(1);
+          z-index: 1;
         }
 
         &:hover .container{
@@ -116,6 +117,7 @@
           // border: 1px solid blue;
           transition: all .5s ease-in-out;
           transform: scaleY(1);
+          z-index: 1;
         }
 
         &:hover .container{
