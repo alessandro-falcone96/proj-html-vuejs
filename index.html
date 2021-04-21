@@ -172,8 +172,10 @@
 
             <ul>
               <li v-for="(item, index) in listaDate" @click="changeActiveIndex(index)">
-                <i v-if="item.isActive == true" class="fas fa-minus fa-xs"></i> {{item.data}}
-                <i v-else class="fas fa-plus fa-xs"></i> {{item.data}}
+                <i v-if="item.isActive == true" class="fas fa-minus fa-xs"></i>
+                <i v-else class="fas fa-plus fa-xs"></i>
+
+                {{item.data}}
 
                 <div class="containerLuogoConcerto" v-if="item.isActive == true">
 
