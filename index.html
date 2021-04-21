@@ -175,7 +175,7 @@
             <div class="containerDate">
 
               <ul>
-                <li v-for="(item, index) in listaDate" @click="changeActiveIndex(index)">
+                <li v-for="(item, index) in listaDate" @click="changeActiveIndexMainPage(index)">
                   <i v-if="item.isActive == true" class="fas fa-minus fa-xs"></i>
                   <i v-else class="fas fa-plus fa-xs"></i>
 
@@ -303,6 +303,34 @@
           </section>
 
           <section class="secondaSezione">
+
+            <div class="containerDate">
+
+              <ul>
+                <li v-for="(item, index) in listaDateLiveDates" @click="changeActiveIndexLiveDates(index)">
+                  <i v-if="item.isActive == true" class="fas fa-minus fa-xs"></i>
+                  <i v-else class="fas fa-plus fa-xs"></i>
+
+                  {{item.data}}
+
+                  <div class="containerLuogoConcerto" v-if="item.isActive == true">
+
+                    <img src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDsUcTjt43mTheN9ruCsQVgBE-wgN6_AfY&language=en&center=New+York&maptype=terrain&zoom=14&size=370x250&markers=icon:https://avada.theme-fusion.com/music/wp-content/uploads/sites/68/2017/09/custom_marker-1.png|New+York&scale=2" alt="">
+
+                    <div class="">
+
+                      <h4>Untold Stories</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      <button class="btn btnRosso" type="button" name="button">BOOK NOW</button>
+
+                    </div>
+
+                  </div>
+
+                </li>
+              </ul>
+
+            </div>
 
           </section>
 
