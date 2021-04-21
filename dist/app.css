@@ -170,6 +170,7 @@ header .headerCenter h4 {
   border: 1px solid #323944;
   cursor: pointer;
   position: relative;
+  overflow: hidden;
 }
 .secondaSezione .containerNews .containerSinistra div .container {
   width: 100%;
@@ -179,9 +180,8 @@ header .headerCenter h4 {
   transform: scaleY(1);
 }
 .secondaSezione .containerNews .containerSinistra div:hover .container {
-  opacity: 0;
+  transform: translateY(100%);
   transition: all 0.5s ease-in-out;
-  transform: scaleY(0);
 }
 .secondaSezione .containerNews .containerSinistra div.overlay {
   position: absolute;
@@ -189,8 +189,8 @@ header .headerCenter h4 {
   bottom: 0;
   left: 0;
   right: 0;
+  transform: translateX(-100%);
   background-color: rgba(236, 72, 87, 0.6);
-  opacity: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -201,8 +201,8 @@ header .headerCenter h4 {
   color: white;
 }
 .secondaSezione .containerNews .containerSinistra div:hover .overlay {
-  opacity: 1;
   transition: all 0.5s ease-in-out;
+  transform: translateX(0);
 }
 .secondaSezione .containerNews .containerSinistra div.technologyMusic, .secondaSezione .containerNews .containerSinistra div.rockFlavour {
   width: 100%;
@@ -242,12 +242,7 @@ header .headerCenter h4 {
   transform: scaleY(1);
 }
 .secondaSezione .containerNews .containerDestra div.oldSchool:hover .container, .secondaSezione .containerNews .containerDestra div.stageLegend:hover .container {
-  opacity: 0;
-  transition: all 0.5s ease-in-out;
-  transform: scaleY(0);
-}
-.secondaSezione .containerNews .containerDestra div.oldSchool:hover .overlay, .secondaSezione .containerNews .containerDestra div.stageLegend:hover .overlay {
-  opacity: 1;
+  transform: translateY(100%);
   transition: all 0.5s ease-in-out;
 }
 .secondaSezione .containerNews .containerDestra div.oldSchool .overlay, .secondaSezione .containerNews .containerDestra div.stageLegend .overlay {
@@ -256,8 +251,8 @@ header .headerCenter h4 {
   bottom: 0;
   left: 0;
   right: 0;
+  transform: translateX(-100%);
   background-color: rgba(236, 72, 87, 0.6);
-  opacity: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -266,6 +261,10 @@ header .headerCenter h4 {
 .secondaSezione .containerNews .containerDestra div.oldSchool .overlay h3.overlayTitle, .secondaSezione .containerNews .containerDestra div.stageLegend .overlay h3.overlayTitle {
   padding: 0;
   color: white;
+}
+.secondaSezione .containerNews .containerDestra div.oldSchool:hover .overlay, .secondaSezione .containerNews .containerDestra div.stageLegend:hover .overlay {
+  transition: all 0.5s ease-in-out;
+  transform: translateX(0);
 }
 .secondaSezione .containerNews .containerDestra div.oldSchool.oldSchool, .secondaSezione .containerNews .containerDestra div.stageLegend.oldSchool {
   margin-bottom: 25px;
