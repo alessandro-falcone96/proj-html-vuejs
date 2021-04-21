@@ -16,223 +16,315 @@
 
     <div id="app">
 
-      <header>
+      <div id="containerMainPage" v-if="isMainPageVisible == true">
 
-        <div class="headerTop">
+        <header>
 
-          <a href="#app"><img src="img/avada-music-logo.png" alt=""></a>
-          <i class="fas fa-bars fa-2x" @click="changeMenuActive"></i>
+          <div class="headerTop">
 
-        </div>
-
-        <div class="menu" v-if="isMenuActive == true">
-
-          <div class="headerMenu">
-            <a href="#app" @click="changeMenuActive"><img src="img/avada-music-logo.png" alt=""></a>
-            <i class="fas fa-times fa-2x" @click="changeMenuActive"></i>
-          </div>
-
-          <ul>
-            <li v-for="item in listaMenu" @click="changeMenuActive"><a :href="item.link">{{item.name}}</a></li>
-          </ul>
-
-        </div>
-
-        <div class="headerCenter">
-
-          <h1>Untold Stories</h1>
-          <h4>There is an untold story behind every favourite song.</h4>
-          <button class="btn btnRosso" type="button" name="button">Latest Album</button>
-          <button class="btn" type="button" name="button">Live Dates</button>
-        </div>
-
-      </header>
-
-      <main>
-
-        <section class="primaSezione">
-
-          <div class="contenuto">
-
-            <h2>Music Is Life</h2>
-            <hr>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="#app"><img src="img/mainPage/avada-music-logo.png" alt=""></a>
+            <i class="fas fa-bars fa-2x" @click="changeMenuActive"></i>
 
           </div>
 
-        </section>
+          <div class="menu" v-if="isMenuActive == true">
 
-        <section class="secondaSezione" id="latestNews">
-          <div class="contenuto">
-            <h2>Latest Band News</h2>
-            <hr>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-
-          <div class="containerNews">
-
-            <div class="containerSinistra">
-
-              <div class="technologyMusic">
-                <img src="img/technologyMusic.jpg" alt="">
-                <div class="container">
-                  <h3 class="title">Technology and music</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="overlay">
-                  <h3 class="overlayTitle">Technology and music</h3>
-                </div>
-              </div>
-
-              <div class="guitarWeeps">
-                <img src="img/guitarWeeps.jpg" alt="">
-                <div class="container">
-                  <h3 class="title">While my guitar gently weeps</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="overlay">
-                  <h3 class="overlayTitle">While my guitar gently weeps</h3>
-                </div>
-              </div>
-
-              <div class="soundsBetter">
-                <img src="img/soundsBetter.jpg" alt="">
-                <div class="container">
-                  <h3 class="title">It just sounds better</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="overlay">
-                  <h3 class="overlayTitle">It just sounds better</h3>
-                </div>
-              </div>
-
-              <div class="rockFlavour">
-                <img src="img/rockFlavor.jpg" alt="">
-                <div class="container">
-                  <h3 class="title">The flavor of rock</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="overlay">
-                  <h3 class="overlayTitle">The flavor of rock</h3>
-                </div>
-              </div>
-
+            <div class="headerMenu">
+              <a href="#app" @click="changeMenuActive"><img src="img/mainPage/avada-music-logo.png" alt=""></a>
+              <i class="fas fa-times fa-2x" @click="changeMenuActive"></i>
             </div>
-
-            <div class="containerDestra">
-
-              <div class="oldSchool">
-                <img src="img/oldSchool.jpg" alt="">
-                <div class="container">
-                  <h3 class="title">Taking it back to the old school</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="overlay">
-                  <h3 class="overlayTitle">Taking it back to the old school</h3>
-                </div>
-              </div>
-
-              <div class="stageLegend">
-                <img src="img/stageLegend.jpg" alt="">
-                <div class="container">
-                  <h3 class="title">Sharing stage with a legend</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="overlay">
-                  <h3 class="overlayTitle">Sharing stage with a legend</h3>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-        </section>
-
-        <section class="terzaSezione">
-          <h4>View All Latest News</h4>
-        </section>
-
-        <section class="quartaSezione">
-          <div class="">
-            <p>“I just listened to it and said to myself, “Man, I really love this album.” Still, today, it just sounds so fresh. It sounds full of ideas. These guys knew what they were doing. They’re good. And they’re inventive. I haven’t heard anything this year that’s as inventive. I don’t really expect to.”</p>
-            <img src="img/band_interview_play_icon.png" alt="">
-          </div>
-        </section>
-
-        <section class="quintaSezione" id="liveDates">
-          <div class="contenuto">
-
-            <h2>Live Dates</h2>
-            <hr>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-          </div>
-
-          <div class="containerDate">
 
             <ul>
-              <li v-for="(item, index) in listaDate" @click="changeActiveIndex(index)">
-                <i v-if="item.isActive == true" class="fas fa-minus fa-xs"></i>
-                <i v-else class="fas fa-plus fa-xs"></i>
-
-                {{item.data}}
-
-                <div class="containerLuogoConcerto" v-if="item.isActive == true">
-
-                  <img src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDsUcTjt43mTheN9ruCsQVgBE-wgN6_AfY&language=en&center=New+York&maptype=terrain&zoom=14&size=370x250&markers=icon:https://avada.theme-fusion.com/music/wp-content/uploads/sites/68/2017/09/custom_marker-1.png|New+York&scale=2" alt="">
-
-                  <div class="">
-
-                    <h4>Untold Stories</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <button class="btn btnRosso" type="button" name="button">BOOK NOW</button>
-
-                  </div>
-
-                </div>
-
-              </li>
+              <li v-for="item in listaMenu" @click="changeMenuActive"><a :href="item.link">{{item.name}}</a></li>
             </ul>
 
           </div>
 
-        </section>
+          <div class="headerCenter">
 
-        <section class="sestaSezione">
-          <h4>View All Live Dates</h4>
-        </section>
+            <h1>Untold Stories</h1>
+            <h4>There is an untold story behind every favourite song.</h4>
+            <button class="btn btnRosso" type="button" name="button">Latest Album</button>
+            <button @click="changePage" class="btn" type="button" name="button">Live Dates</button>
+          </div>
 
-      </main>
+        </header>
 
-      <footer>
+        <main>
 
-        <div class="footerTop">
+          <section class="primaSezione">
 
-          <img src="img/logo_footer.png" alt="">
+            <div class="contenuto">
 
-          <ul>
-            <li v-for="item in listaFooterTop"><a href="#">{{item}}</a></li>
-          </ul>
+              <h2>Music Is Life</h2>
+              <hr>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-        </div>
+            </div>
 
-        <div class="footerBottom">
+          </section>
 
-          <ul>
-            <li v-for="element in listaFooterBottom"><a href="#">{{element}}</a></li>
-          </ul>
+          <section class="secondaSezione" id="latestNews">
+            <div class="contenuto">
+              <h2>Latest Band News</h2>
+              <hr>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
 
-          <ul>
-            <li v-for="element in listaIconeSocial"><a href="#"><i class="fab fa-lg" :class="element"></i></a></li>
-          </ul>
+            <div class="containerNews">
 
-        </div>
+              <div class="containerSinistra">
 
-        <div class="">
-          <a href="#app"><i class="fas fa-chevron-up fa-2x"></i></a>
-        </div>
+                <div class="technologyMusic">
+                  <img src="img/mainPage/technologyMusic.jpg" alt="">
+                  <div class="container">
+                    <h3 class="title">Technology and music</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                  <div class="overlay">
+                    <h3 class="overlayTitle">Technology and music</h3>
+                  </div>
+                </div>
 
-      </footer>
+                <div class="guitarWeeps">
+                  <img src="img/mainPage/guitarWeeps.jpg" alt="">
+                  <div class="container">
+                    <h3 class="title">While my guitar gently weeps</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                  <div class="overlay">
+                    <h3 class="overlayTitle">While my guitar gently weeps</h3>
+                  </div>
+                </div>
+
+                <div class="soundsBetter">
+                  <img src="img/mainPage/soundsBetter.jpg" alt="">
+                  <div class="container">
+                    <h3 class="title">It just sounds better</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                  <div class="overlay">
+                    <h3 class="overlayTitle">It just sounds better</h3>
+                  </div>
+                </div>
+
+                <div class="rockFlavour">
+                  <img src="img/mainPage/rockFlavor.jpg" alt="">
+                  <div class="container">
+                    <h3 class="title">The flavor of rock</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                  <div class="overlay">
+                    <h3 class="overlayTitle">The flavor of rock</h3>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="containerDestra">
+
+                <div class="oldSchool">
+                  <img src="img/mainPage/oldSchool.jpg" alt="">
+                  <div class="container">
+                    <h3 class="title">Taking it back to the old school</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                  <div class="overlay">
+                    <h3 class="overlayTitle">Taking it back to the old school</h3>
+                  </div>
+                </div>
+
+                <div class="stageLegend">
+                  <img src="img/mainPage/stageLegend.jpg" alt="">
+                  <div class="container">
+                    <h3 class="title">Sharing stage with a legend</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                  <div class="overlay">
+                    <h3 class="overlayTitle">Sharing stage with a legend</h3>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </section>
+
+          <section class="terzaSezione">
+            <h4>View All Latest News</h4>
+          </section>
+
+          <section class="quartaSezione">
+            <div class="">
+              <p>“I just listened to it and said to myself, “Man, I really love this album.” Still, today, it just sounds so fresh. It sounds full of ideas. These guys knew what they were doing. They’re good. And they’re inventive. I haven’t heard anything this year that’s as inventive. I don’t really expect to.”</p>
+              <img src="img/mainPage/band_interview_play_icon.png" alt="">
+            </div>
+          </section>
+
+          <section class="quintaSezione" id="liveDates">
+            <div class="contenuto">
+
+              <h2>Live Dates</h2>
+              <hr>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+            </div>
+
+            <div class="containerDate">
+
+              <ul>
+                <li v-for="(item, index) in listaDate" @click="changeActiveIndex(index)">
+                  <i v-if="item.isActive == true" class="fas fa-minus fa-xs"></i>
+                  <i v-else class="fas fa-plus fa-xs"></i>
+
+                  {{item.data}}
+
+                  <div class="containerLuogoConcerto" v-if="item.isActive == true">
+
+                    <img src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDsUcTjt43mTheN9ruCsQVgBE-wgN6_AfY&language=en&center=New+York&maptype=terrain&zoom=14&size=370x250&markers=icon:https://avada.theme-fusion.com/music/wp-content/uploads/sites/68/2017/09/custom_marker-1.png|New+York&scale=2" alt="">
+
+                    <div class="">
+
+                      <h4>Untold Stories</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      <button class="btn btnRosso" type="button" name="button">BOOK NOW</button>
+
+                    </div>
+
+                  </div>
+
+                </li>
+              </ul>
+
+            </div>
+
+          </section>
+
+          <section class="sestaSezione">
+            <h4>View All Live Dates</h4>
+          </section>
+
+        </main>
+
+        <footer>
+
+          <div class="footerTop">
+
+            <img src="img/mainPage/logo_footer.png" alt="">
+
+            <ul>
+              <li v-for="item in listaFooterTop"><a href="#">{{item}}</a></li>
+            </ul>
+
+          </div>
+
+          <div class="footerBottom">
+
+            <ul>
+              <li v-for="element in listaFooterBottom"><a href="#">{{element}}</a></li>
+            </ul>
+
+            <ul>
+              <li v-for="element in listaIconeSocial"><a href="#"><i class="fab fa-lg" :class="element"></i></a></li>
+            </ul>
+
+          </div>
+
+          <div class="">
+            <a href="#app"><i class="fas fa-chevron-up fa-2x"></i></a>
+          </div>
+
+        </footer>
+
+      </div>
+
+      <div id="containerLiveDates" v-if="isLiveDatesVisible == true">
+
+        <header>
+
+          <div class="headerTop">
+
+            <a href="#app"><img src="img/mainPage/avada-music-logo.png" alt=""></a>
+            <i class="fas fa-bars fa-2x" @click="changeMenuActive"></i>
+
+          </div>
+
+          <div class="menu" v-if="isMenuActive == true">
+
+            <div class="headerMenu">
+              <a href="#app" @click="changeMenuActive"><img src="img/mainPage/avada-music-logo.png" alt=""></a>
+              <i class="fas fa-times fa-2x" @click="changeMenuActive"></i>
+            </div>
+
+            <ul>
+              <li v-for="item in listaMenu" @click="changeMenuActive"><a :href="item.link">{{item.name}}</a></li>
+            </ul>
+
+          </div>
+
+          <div class="headerCenter">
+
+            <h1>Live Dates</h1>
+            <h4>There is nopthing better than live music. It's raw energy that feeds the soul.</h4>
+            <button @click="changePage" class="btn" type="button" name="button">Latest Album</button>
+            <button class="btn btnRosso" type="button" name="button">Live Dates</button>
+          </div>
+
+        </header>
+
+        <main>
+
+          <section class="primaSezione">
+
+
+
+          </section>
+
+          <section class="secondaSezione">
+
+          </section>
+
+          <section class="terzaSezione">
+
+          </section>
+
+          <section class="quartaSezione">
+
+          </section>
+
+        </main>
+
+        <footer>
+
+          <div class="footerTop">
+
+            <img src="img/mainPage/logo_footer.png" alt="">
+
+            <ul>
+              <li v-for="item in listaFooterTop"><a href="#">{{item}}</a></li>
+            </ul>
+
+          </div>
+
+          <div class="footerBottom">
+
+            <ul>
+              <li v-for="element in listaFooterBottom"><a href="#">{{element}}</a></li>
+            </ul>
+
+            <ul>
+              <li v-for="element in listaIconeSocial"><a href="#"><i class="fab fa-lg" :class="element"></i></a></li>
+            </ul>
+
+          </div>
+
+          <div class="">
+            <a href="#app"><i class="fas fa-chevron-up fa-2x"></i></a>
+          </div>
+
+        </footer>
+
+      </div>
 
     </div>
 

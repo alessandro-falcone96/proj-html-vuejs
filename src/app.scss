@@ -1,5 +1,12 @@
 @import "Partials/_variables.scss";
 @import "Partials/common.scss";
-@import "Partials/header.scss";
-@import "Partials/main.scss";
-@import "Partials/footer.scss";
+
+// Main Page
+@import "Partials/mainPage/header.scss";
+@import "Partials/mainPage/main.scss";
+@import "Partials/mainPage/footer.scss";
+
+// Live Dates
+@import "Partials/liveDates/header.scss";
+@import "Partials/liveDates/main.scss";
+@import "Partials/liveDates/footer.scss";

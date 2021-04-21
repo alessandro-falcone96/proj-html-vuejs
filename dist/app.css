@@ -75,15 +75,15 @@ hr {
   border: 1px solid #7D7C8D;
 }
 
-header {
+#containerMainPage header {
   height: 100vh;
-  background-image: url("../img/home_slider.jpg");
+  background-image: url("../img/mainPage/home_slider.jpg");
   background-size: cover;
   background-position: center;
   color: white;
   position: relative;
 }
-header .headerTop {
+#containerMainPage header .headerTop {
   height: 100px;
   display: flex;
   padding: 20px 50px;
@@ -95,43 +95,43 @@ header .headerTop {
   z-index: 1;
   background-color: rgba(37, 43, 51, 0.7);
 }
-header .headerTop img, header .headerTop i {
+#containerMainPage header .headerTop img, #containerMainPage header .headerTop i {
   cursor: pointer;
 }
-header .menu {
+#containerMainPage header .menu {
   height: 100vh;
   width: 100%;
   background-color: #EC4857;
   position: fixed;
   z-index: 10;
 }
-header .menu .headerMenu {
+#containerMainPage header .menu .headerMenu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 5px 50px;
 }
-header .menu .headerMenu i {
+#containerMainPage header .menu .headerMenu i {
   cursor: pointer;
   color: #aeaeaf;
 }
-header .menu .headerMenu i:hover {
+#containerMainPage header .menu .headerMenu i:hover {
   color: white;
 }
-header .menu ul li {
+#containerMainPage header .menu ul li {
   display: block;
   text-align: center;
   font-size: 30px;
   padding: 35px 0px;
 }
-header .menu ul li a {
+#containerMainPage header .menu ul li a {
   color: #aeaeaf;
   font-family: "Montserrat", sans-serif;
 }
-header .menu ul li a:hover {
+#containerMainPage header .menu ul li a:hover {
   color: white;
 }
-header .headerCenter {
+#containerMainPage header .headerCenter {
   width: 100%;
   text-align: center;
   position: absolute;
@@ -139,13 +139,13 @@ header .headerCenter {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-header .headerCenter h1 {
+#containerMainPage header .headerCenter h1 {
   font-size: 150px;
   letter-spacing: 5px;
   font-weight: 900;
   font-family: "Montserrat", sans-serif;
 }
-header .headerCenter h4 {
+#containerMainPage header .headerCenter h4 {
   font-size: 20px;
   font-style: italic;
   font-weight: 300;
@@ -153,39 +153,39 @@ header .headerCenter h4 {
   font-family: "Merriweather", serif;
 }
 
-.primaSezione {
+#containerMainPage .primaSezione {
   background-color: #323944;
 }
-.primaSezione .contenuto h2 {
+#containerMainPage .primaSezione .contenuto h2 {
   width: 60%;
   margin: auto;
   border-top: 15px solid #EC4857;
 }
 
-.secondaSezione {
+#containerMainPage .secondaSezione {
   background-color: #252B33;
   padding-bottom: 100px;
 }
-.secondaSezione .containerNews {
+#containerMainPage .secondaSezione .containerNews {
   display: flex;
   justify-content: space-between;
   width: 80%;
   margin: 0px auto 0px auto;
 }
-.secondaSezione .containerNews .containerSinistra {
+#containerMainPage .secondaSezione .containerNews .containerSinistra {
   width: 66%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.secondaSezione .containerNews .containerSinistra div {
+#containerMainPage .secondaSezione .containerNews .containerSinistra div {
   background-color: #323944;
   border: 1px solid #323944;
   cursor: pointer;
   position: relative;
   overflow: hidden;
 }
-.secondaSezione .containerNews .containerSinistra div .container {
+#containerMainPage .secondaSezione .containerNews .containerSinistra div .container {
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -193,11 +193,11 @@ header .headerCenter h4 {
   transform: scaleY(1);
   z-index: 1;
 }
-.secondaSezione .containerNews .containerSinistra div:hover .container {
+#containerMainPage .secondaSezione .containerNews .containerSinistra div:hover .container {
   transform: translateY(100%);
   transition: all 0.5s ease-in-out;
 }
-.secondaSezione .containerNews .containerSinistra div.overlay {
+#containerMainPage .secondaSezione .containerNews .containerSinistra div.overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -210,36 +210,36 @@ header .headerCenter h4 {
   align-items: center;
   transition: all 0.5s ease-in-out;
 }
-.secondaSezione .containerNews .containerSinistra div.overlay h3.overlayTitle {
+#containerMainPage .secondaSezione .containerNews .containerSinistra div.overlay h3.overlayTitle {
   padding: 0;
   color: white;
 }
-.secondaSezione .containerNews .containerSinistra div:hover .overlay {
+#containerMainPage .secondaSezione .containerNews .containerSinistra div:hover .overlay {
   transition: all 0.5s ease-in-out;
   transform: translateX(0);
 }
-.secondaSezione .containerNews .containerSinistra div.technologyMusic, .secondaSezione .containerNews .containerSinistra div.rockFlavour {
+#containerMainPage .secondaSezione .containerNews .containerSinistra div.technologyMusic, #containerMainPage .secondaSezione .containerNews .containerSinistra div.rockFlavour {
   width: 100%;
 }
-.secondaSezione .containerNews .containerSinistra div.technologyMusic img, .secondaSezione .containerNews .containerSinistra div.rockFlavour img {
+#containerMainPage .secondaSezione .containerNews .containerSinistra div.technologyMusic img, #containerMainPage .secondaSezione .containerNews .containerSinistra div.rockFlavour img {
   width: 100%;
   height: 100%;
 }
-.secondaSezione .containerNews .containerSinistra div.guitarWeeps, .secondaSezione .containerNews .containerSinistra div.soundsBetter {
+#containerMainPage .secondaSezione .containerNews .containerSinistra div.guitarWeeps, #containerMainPage .secondaSezione .containerNews .containerSinistra div.soundsBetter {
   width: 48%;
   margin: 35px 0px;
 }
-.secondaSezione .containerNews .containerSinistra div.guitarWeeps img, .secondaSezione .containerNews .containerSinistra div.soundsBetter img {
+#containerMainPage .secondaSezione .containerNews .containerSinistra div.guitarWeeps img, #containerMainPage .secondaSezione .containerNews .containerSinistra div.soundsBetter img {
   width: 100%;
   height: 100%;
 }
-.secondaSezione .containerNews .containerDestra {
+#containerMainPage .secondaSezione .containerNews .containerDestra {
   width: 32%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.secondaSezione .containerNews .containerDestra div.oldSchool, .secondaSezione .containerNews .containerDestra div.stageLegend {
+#containerMainPage .secondaSezione .containerNews .containerDestra div.oldSchool, #containerMainPage .secondaSezione .containerNews .containerDestra div.stageLegend {
   border: 1px solid #323944;
   padding-bottom: 25px;
   cursor: pointer;
@@ -247,7 +247,7 @@ header .headerCenter h4 {
   position: relative;
   overflow: hidden;
 }
-.secondaSezione .containerNews .containerDestra div.oldSchool .container, .secondaSezione .containerNews .containerDestra div.stageLegend .container {
+#containerMainPage .secondaSezione .containerNews .containerDestra div.oldSchool .container, #containerMainPage .secondaSezione .containerNews .containerDestra div.stageLegend .container {
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -256,11 +256,11 @@ header .headerCenter h4 {
   transform: scaleY(1);
   z-index: 1;
 }
-.secondaSezione .containerNews .containerDestra div.oldSchool:hover .container, .secondaSezione .containerNews .containerDestra div.stageLegend:hover .container {
+#containerMainPage .secondaSezione .containerNews .containerDestra div.oldSchool:hover .container, #containerMainPage .secondaSezione .containerNews .containerDestra div.stageLegend:hover .container {
   transform: translateY(100%);
   transition: all 0.5s ease-in-out;
 }
-.secondaSezione .containerNews .containerDestra div.oldSchool .overlay, .secondaSezione .containerNews .containerDestra div.stageLegend .overlay {
+#containerMainPage .secondaSezione .containerNews .containerDestra div.oldSchool .overlay, #containerMainPage .secondaSezione .containerNews .containerDestra div.stageLegend .overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -273,18 +273,18 @@ header .headerCenter h4 {
   align-items: center;
   transition: all 0.5s ease-in-out;
 }
-.secondaSezione .containerNews .containerDestra div.oldSchool .overlay h3.overlayTitle, .secondaSezione .containerNews .containerDestra div.stageLegend .overlay h3.overlayTitle {
+#containerMainPage .secondaSezione .containerNews .containerDestra div.oldSchool .overlay h3.overlayTitle, #containerMainPage .secondaSezione .containerNews .containerDestra div.stageLegend .overlay h3.overlayTitle {
   padding: 0;
   color: white;
 }
-.secondaSezione .containerNews .containerDestra div.oldSchool:hover .overlay, .secondaSezione .containerNews .containerDestra div.stageLegend:hover .overlay {
+#containerMainPage .secondaSezione .containerNews .containerDestra div.oldSchool:hover .overlay, #containerMainPage .secondaSezione .containerNews .containerDestra div.stageLegend:hover .overlay {
   transition: all 0.5s ease-in-out;
   transform: translateX(0);
 }
-.secondaSezione .containerNews .containerDestra div.oldSchool.oldSchool, .secondaSezione .containerNews .containerDestra div.stageLegend.oldSchool {
+#containerMainPage .secondaSezione .containerNews .containerDestra div.oldSchool.oldSchool, #containerMainPage .secondaSezione .containerNews .containerDestra div.stageLegend.oldSchool {
   margin-bottom: 25px;
 }
-.secondaSezione .containerNews .containerDestra div.oldSchool img, .secondaSezione .containerNews .containerDestra div.stageLegend img {
+#containerMainPage .secondaSezione .containerNews .containerDestra div.oldSchool img, #containerMainPage .secondaSezione .containerNews .containerDestra div.stageLegend img {
   width: 100%;
   height: 105%;
   -o-object-fit: cover;
@@ -292,19 +292,19 @@ header .headerCenter h4 {
   -o-object-position: center center;
      object-position: center center;
 }
-.secondaSezione .containerNews h3 {
+#containerMainPage .secondaSezione .containerNews h3 {
   padding-top: 35px;
   padding-left: 15px;
   font-family: "Montserrat", sans-serif;
 }
-.secondaSezione .containerNews p {
+#containerMainPage .secondaSezione .containerNews p {
   padding-top: 20px;
   padding-left: 15px;
   padding-bottom: 35px;
   font-family: "Merriweather", serif;
 }
 
-.terzaSezione, .sestaSezione {
+#containerMainPage .terzaSezione, #containerMainPage .sestaSezione {
   background-color: #EC4857;
   color: white;
   text-align: center;
@@ -312,27 +312,27 @@ header .headerCenter h4 {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-.terzaSezione:hover, .sestaSezione:hover {
+#containerMainPage .terzaSezione:hover, #containerMainPage .sestaSezione:hover {
   color: black;
   background-color: white;
   transition: all 0.3s ease-in-out;
 }
-.terzaSezione h4, .sestaSezione h4 {
+#containerMainPage .terzaSezione h4, #containerMainPage .sestaSezione h4 {
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-family: "PT Sans", sans-serif;
 }
 
-.quartaSezione {
+#containerMainPage .quartaSezione {
   height: 90vh;
-  background-image: url("../img/home-testimonial-parallax.jpg");
+  background-image: url("../img/mainPage/home-testimonial-parallax.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   position: relative;
 }
-.quartaSezione div {
+#containerMainPage .quartaSezione div {
   width: 60%;
   display: flex;
   flex-direction: column;
@@ -342,7 +342,7 @@ header .headerCenter h4 {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.quartaSezione div p {
+#containerMainPage .quartaSezione div p {
   color: white;
   font-size: 30px;
   line-height: 55px;
@@ -350,20 +350,20 @@ header .headerCenter h4 {
   font-style: italic;
   font-family: "Merriweather", serif;
 }
-.quartaSezione div img {
+#containerMainPage .quartaSezione div img {
   padding-top: 30px;
   cursor: pointer;
 }
 
-.quintaSezione {
+#containerMainPage .quintaSezione {
   background-color: #252B33;
   padding-bottom: 150px;
 }
-.quintaSezione .containerDate {
+#containerMainPage .quintaSezione .containerDate {
   width: 90%;
   margin: auto;
 }
-.quintaSezione .containerDate ul li {
+#containerMainPage .quintaSezione .containerDate ul li {
   display: block;
   color: #EC4857;
   background-color: #323944;
@@ -373,58 +373,57 @@ header .headerCenter h4 {
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
 }
-.quintaSezione .containerDate ul li i {
+#containerMainPage .quintaSezione .containerDate ul li i {
   color: white;
   padding: 8px;
   margin: 0px 15px;
   transition: 0.5s;
 }
-.quintaSezione .containerDate ul li:hover {
+#containerMainPage .quintaSezione .containerDate ul li:hover {
   background-color: #373E4A;
 }
-.quintaSezione .containerDate ul li:hover i {
+#containerMainPage .quintaSezione .containerDate ul li:hover i {
   background-color: #EC4857;
   transition: 0.5s;
 }
-.quintaSezione .containerDate ul li .containerLuogoConcerto {
+#containerMainPage .quintaSezione .containerDate ul li .containerLuogoConcerto {
   width: 90%;
   margin: auto;
   display: flex;
   align-items: center;
   padding: 15px 0px;
-  transition: 2s;
 }
-.quintaSezione .containerDate ul li .containerLuogoConcerto img {
+#containerMainPage .quintaSezione .containerDate ul li .containerLuogoConcerto img {
   height: 200px;
   width: 300px;
 }
-.quintaSezione .containerDate ul li .containerLuogoConcerto div {
+#containerMainPage .quintaSezione .containerDate ul li .containerLuogoConcerto div {
   margin-left: 45px;
 }
-.quintaSezione .containerDate ul li .containerLuogoConcerto div h4 {
+#containerMainPage .quintaSezione .containerDate ul li .containerLuogoConcerto div h4 {
   color: white;
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
 }
-.quintaSezione .containerDate ul li .containerLuogoConcerto div p {
+#containerMainPage .quintaSezione .containerDate ul li .containerLuogoConcerto div p {
   padding: 15px 0px;
   line-height: 25px;
   font-family: "Merriweather", serif;
 }
 
-footer {
+#containerMainPage footer {
   height: 35vh;
   background-color: red;
 }
-footer ul li :hover {
+#containerMainPage footer ul li :hover {
   color: white;
 }
-footer ul li a {
+#containerMainPage footer ul li a {
   padding: 0px 10px;
   font-weight: 400;
   font-family: "Merriweather", serif;
 }
-footer .footerTop {
+#containerMainPage footer .footerTop {
   height: 20vh;
   background-color: #323944;
   padding-left: 30px;
@@ -433,7 +432,7 @@ footer .footerTop {
   justify-content: space-between;
   align-items: center;
 }
-footer .footerBottom {
+#containerMainPage footer .footerBottom {
   height: 15vh;
   background-color: #252B33;
   padding-left: 30px;
@@ -442,15 +441,15 @@ footer .footerBottom {
   justify-content: space-between;
   align-items: center;
 }
-footer .footerBottom ul:first-child li a {
+#containerMainPage footer .footerBottom ul:first-child li a {
   font-size: 10px;
   font-weight: 400;
   border-right: 1px solid #7D7C8D;
 }
-footer .footerBottom ul:first-child li:last-child a {
+#containerMainPage footer .footerBottom ul:first-child li:last-child a {
   border: none;
 }
-footer .footerBottom ul:last-child li {
+#containerMainPage footer .footerBottom ul:last-child li {
   height: 40px;
   width: 40px;
   line-height: 40px;
@@ -458,7 +457,7 @@ footer .footerBottom ul:last-child li {
   margin: 5px;
   background-color: #323944;
 }
-footer div:last-child {
+#containerMainPage footer div:last-child {
   width: 50px;
   background-color: #323233;
   color: white;
@@ -469,12 +468,157 @@ footer div:last-child {
   border-radius: 5px;
   z-index: 10;
 }
-footer div:last-child i {
+#containerMainPage footer div:last-child i {
   padding: 5px;
 }
-footer div:last-child i:hover {
+#containerMainPage footer div:last-child i:hover {
   color: white;
 }
-footer div:last-child:hover {
+#containerMainPage footer div:last-child:hover {
+  background-color: #EC4857;
+}
+
+#containerLiveDates header {
+  height: 100vh;
+  background-image: url("../img/liveDates/live_date_slide.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  position: relative;
+}
+#containerLiveDates header .headerTop {
+  height: 100px;
+  display: flex;
+  padding: 20px 50px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: rgba(37, 43, 51, 0.7);
+}
+#containerLiveDates header .headerTop img, #containerLiveDates header .headerTop i {
+  cursor: pointer;
+}
+#containerLiveDates header .menu {
+  height: 100vh;
+  width: 100%;
+  background-color: #EC4857;
+  position: fixed;
+  z-index: 10;
+}
+#containerLiveDates header .menu .headerMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 50px;
+}
+#containerLiveDates header .menu .headerMenu i {
+  cursor: pointer;
+  color: #aeaeaf;
+}
+#containerLiveDates header .menu .headerMenu i:hover {
+  color: white;
+}
+#containerLiveDates header .menu ul li {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  padding: 35px 0px;
+}
+#containerLiveDates header .menu ul li a {
+  color: #aeaeaf;
+  font-family: "Montserrat", sans-serif;
+}
+#containerLiveDates header .menu ul li a:hover {
+  color: white;
+}
+#containerLiveDates header .headerCenter {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#containerLiveDates header .headerCenter h1 {
+  font-size: 150px;
+  letter-spacing: 5px;
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+}
+#containerLiveDates header .headerCenter h4 {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 300;
+  padding: 50px 0px 50px 0px;
+  font-family: "Merriweather", serif;
+}
+
+#containerLiveDates footer {
+  height: 35vh;
+  background-color: red;
+}
+#containerLiveDates footer ul li :hover {
+  color: white;
+}
+#containerLiveDates footer ul li a {
+  padding: 0px 10px;
+  font-weight: 400;
+  font-family: "Merriweather", serif;
+}
+#containerLiveDates footer .footerTop {
+  height: 20vh;
+  background-color: #323944;
+  padding-left: 30px;
+  padding-right: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#containerLiveDates footer .footerBottom {
+  height: 15vh;
+  background-color: #252B33;
+  padding-left: 30px;
+  padding-right: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#containerLiveDates footer .footerBottom ul:first-child li a {
+  font-size: 10px;
+  font-weight: 400;
+  border-right: 1px solid #7D7C8D;
+}
+#containerLiveDates footer .footerBottom ul:first-child li:last-child a {
+  border: none;
+}
+#containerLiveDates footer .footerBottom ul:last-child li {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin: 5px;
+  background-color: #323944;
+}
+#containerLiveDates footer div:last-child {
+  width: 50px;
+  background-color: #323233;
+  color: white;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  right: 75px;
+  border-radius: 5px;
+  z-index: 10;
+}
+#containerLiveDates footer div:last-child i {
+  padding: 5px;
+}
+#containerLiveDates footer div:last-child i:hover {
+  color: white;
+}
+#containerLiveDates footer div:last-child:hover {
   background-color: #EC4857;
 }

@@ -2,6 +2,7 @@ var app = new Vue (
   {
     el: "#app",
     data: {
+      // Main Page
       listaFooterTop: [
         "Home",
         "Meet The Band",
@@ -10,14 +11,6 @@ var app = new Vue (
         "Albums",
         "Fans"
       ],
-      // listaMenu: [
-      //   "Home",
-      //   "Meet The Band",
-      //   "Live Dates",
-      //   "Latest News",
-      //   "Albums",
-      //   "Fans"
-      // ],
       listaMenu: [
         {
           name: "Home",
@@ -79,7 +72,11 @@ var app = new Vue (
         },
       ],
       indexLastActive: 0,
-      isMenuActive: false
+      isMenuActive: false,
+
+      // Live Dates
+      isMainPageVisible: true,
+      isLiveDatesVisible: false
     },
     mounted: function() {
 
@@ -99,6 +96,15 @@ var app = new Vue (
           this.isMenuActive = true;
         } else {
           this.isMenuActive = false;
+        }
+      },
+      changePage: function() {
+        if (this.isMainPageVisible == false) {
+          this.isMainPageVisible = true;
+          this.isLiveDatesVisible = false;
+        } else {
+          this.isMainPageVisible = false;
+          this.isLiveDatesVisible = true;
         }
       }
     }

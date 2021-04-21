@@ -1,6 +1,8 @@
-.primaSezione{
+#containerMainPage .primaSezione{
   background-color: $coloreGrigioChiaro;
+
   & .contenuto{
+
     & h2{
       width: 60%;
       margin: auto;
@@ -9,7 +11,7 @@
   }
 }
 
-.secondaSezione{
+#containerMainPage .secondaSezione{
   background-color: $coloreGrigioScuro;
   padding-bottom: 100px;
 
@@ -180,7 +182,7 @@
   }
 }
 
-.terzaSezione, .sestaSezione{
+#containerMainPage .terzaSezione, #containerMainPage .sestaSezione{
   background-color: $coloreRossiccio;
   color: white;
   text-align: center;
@@ -202,10 +204,10 @@
   }
 }
 
-.quartaSezione{
+#containerMainPage .quartaSezione{
   height: 90vh;
   // border: 1px solid orange;
-  background-image: url("../img/home-testimonial-parallax.jpg");
+  background-image: url("../img/mainPage/home-testimonial-parallax.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -238,7 +240,7 @@
   }
 }
 
-.quintaSezione{
+#containerMainPage .quintaSezione{
   background-color: $coloreGrigioScuro;
   padding-bottom: 150px;
 
@@ -281,7 +283,6 @@
         display: flex;
         align-items: center;
         padding: 15px 0px;
-        transition: 2s;
 
         & img{
           height: 200px;

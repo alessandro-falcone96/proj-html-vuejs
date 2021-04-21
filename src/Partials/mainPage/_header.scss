@@ -1,0 +1,102 @@
+#containerMainPage header{
+  height: 100vh;
+  background-image: url("../img/mainPage/home_slider.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  position: relative;
+
+  & .headerTop{
+    height: 100px;
+    display: flex;
+    padding: 20px 50px;
+    justify-content: space-between;
+    align-items: center;
+    // border: 1px solid white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: $coloreGrigioScuroOpaco;
+
+    & img, & i{
+      cursor: pointer;
+    }
+  }
+
+  & .menu{
+    // margin-top: 100px;
+    height: 100vh;
+    width: 100%;
+    background-color: $coloreRossiccio;
+    position: fixed;
+    // top: 0;
+    // bottom: 0;
+    // left: 0;
+    // right: 0;
+    z-index: 10;
+
+    & .headerMenu{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 50px;
+
+      & i{
+        cursor: pointer;
+        color: #aeaeaf;
+
+        &:hover{
+          color: white;
+        }
+      }
+    }
+
+    & ul li{
+      display: block;
+      text-align: center;
+      font-size: $fontMedio;
+      padding: 35px 0px;
+
+
+      & a{
+        color: #aeaeaf;
+        font-family: 'Montserrat', sans-serif;
+
+        &:hover{
+          color: white;
+        }
+      }
+    }
+  }
+
+  & .headerCenter{
+    // border: 1px solid white;
+    // margin-top: 100px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    & h1{
+      font-size: $fontGrande;
+      letter-spacing: 5px;
+      font-weight: 900;
+      // border: 1px solid white;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    & h4{
+      font-size: $fontMedioPiccolo;
+      font-style: italic;
+      font-weight: 300;
+      padding: 50px 0px 50px 0px;
+      font-family: 'Merriweather', serif;
+    }
+
+
+  }
+
+}
