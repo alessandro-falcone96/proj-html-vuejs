@@ -58,4 +58,27 @@ footer{
       background-color: $coloreGrigioChiaro;
     }
   }
+
+  & div:last-child{
+    width: 50px;
+    background-color: $coloreGrigioBottoneFondo;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    right: 75px;
+    border-radius: 5px;
+
+    & i{
+      padding: 5px;
+
+      &:hover{
+        color: white;
+      }
+    }
+
+    &:hover{
+      background-color: $coloreRossiccio;
+    }
+  }
 }
