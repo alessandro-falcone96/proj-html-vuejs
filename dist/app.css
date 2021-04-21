@@ -603,6 +603,59 @@ hr {
   padding: 150px 0px;
 }
 
+#containerLiveDates .terzaSezione {
+  height: 60vh;
+  background-image: url("../img/liveDates/live_date_parallax_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+#containerLiveDates .terzaSezione div {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#containerLiveDates .terzaSezione div p {
+  color: white;
+  font-size: 30px;
+  line-height: 55px;
+  text-align: center;
+  font-style: italic;
+  font-family: "Merriweather", serif;
+}
+#containerLiveDates .terzaSezione div span {
+  padding-top: 30px;
+}
+#containerLiveDates .terzaSezione div span i {
+  color: white;
+}
+
+#containerLiveDates .quartaSezione {
+  background-color: #EC4857;
+  color: white;
+  text-align: center;
+  padding: 75px 0px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+#containerLiveDates .quartaSezione:hover {
+  color: black;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+#containerLiveDates .quartaSezione h4 {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "PT Sans", sans-serif;
+}
+
 #containerLiveDates footer {
   height: 35vh;
   background-color: red;
