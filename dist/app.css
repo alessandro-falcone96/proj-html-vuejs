@@ -722,3 +722,245 @@ hr {
 #containerLiveDates footer div:last-child:hover {
   background-color: #EC4857;
 }
+
+#containerMeetTheBand header {
+  height: 100vh;
+  background-image: url("../img/meetTheBand/about-slider.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  position: relative;
+}
+#containerMeetTheBand header .headerTop {
+  height: 100px;
+  display: flex;
+  padding: 20px 50px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: rgba(37, 43, 51, 0.7);
+}
+#containerMeetTheBand header .headerTop img, #containerMeetTheBand header .headerTop i {
+  cursor: pointer;
+}
+#containerMeetTheBand header .menu {
+  height: 100vh;
+  width: 100%;
+  background-color: #EC4857;
+  position: fixed;
+  z-index: 10;
+}
+#containerMeetTheBand header .menu .headerMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 50px;
+}
+#containerMeetTheBand header .menu .headerMenu i {
+  cursor: pointer;
+  color: #aeaeaf;
+}
+#containerMeetTheBand header .menu .headerMenu i:hover {
+  color: white;
+}
+#containerMeetTheBand header .menu ul li {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  padding: 35px 0px;
+}
+#containerMeetTheBand header .menu ul li a {
+  color: #aeaeaf;
+  font-family: "Montserrat", sans-serif;
+}
+#containerMeetTheBand header .menu ul li a:hover {
+  color: white;
+}
+#containerMeetTheBand header .headerCenter {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#containerMeetTheBand header .headerCenter h1 {
+  font-size: 150px;
+  letter-spacing: 5px;
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+}
+#containerMeetTheBand header .headerCenter h4 {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 300;
+  padding: 50px 0px 50px 0px;
+  font-family: "Merriweather", serif;
+}
+
+#containerMeetTheBand .primaSezione {
+  background-color: #323944;
+}
+#containerMeetTheBand .primaSezione .containerProfili {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+#containerMeetTheBand .primaSezione .containerProfili .profilo {
+  width: 23%;
+  text-align: center;
+}
+#containerMeetTheBand .primaSezione .containerProfili .profilo img {
+  width: 100%;
+}
+#containerMeetTheBand .primaSezione .containerProfili .profilo h3 {
+  color: white;
+  font-weight: 400;
+  padding: 25px 0px;
+}
+#containerMeetTheBand .primaSezione .containerProfili .profilo ul li {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin: 5px;
+  background-color: #EC4857;
+}
+#containerMeetTheBand .primaSezione .containerProfili .profilo ul li a {
+  color: #323944;
+}
+#containerMeetTheBand .primaSezione .containerProfili .profilo p {
+  line-height: 30px;
+  padding-top: 30px;
+}
+
+#containerMeetTheBand .secondaSezione {
+  background-color: #252B33;
+  display: flex;
+}
+#containerMeetTheBand .secondaSezione .descrizione {
+  width: 60%;
+  padding: 50px 50px 100px 50px;
+}
+#containerMeetTheBand .secondaSezione .descrizione hr {
+  width: 50%;
+  margin-left: 0;
+}
+#containerMeetTheBand .secondaSezione .descrizione p {
+  line-height: 30px;
+  margin: 20px 0px;
+}
+#containerMeetTheBand .secondaSezione .frase {
+  width: 40%;
+  background-image: url("../img/meetTheBand/about-quote.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#containerMeetTheBand .secondaSezione .frase p {
+  font-style: italic;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  width: 85%;
+  line-height: 35px;
+  margin-bottom: 30px;
+}
+#containerMeetTheBand .secondaSezione .frase span {
+  color: white;
+}
+
+#containerMeetTheBand .terzaSezione {
+  height: 80vh;
+  background-image: url("../img/meetTheBand/about_video_parallax.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#containerMeetTheBand .quartaSezione {
+  background-color: #323944;
+}
+#containerMeetTheBand .quartaSezione .containerFoto {
+  margin-top: 50px;
+}
+#containerMeetTheBand .quartaSezione .containerFoto img {
+  width: 25%;
+}
+
+#containerMeetTheBand footer {
+  height: 35vh;
+  background-color: red;
+}
+#containerMeetTheBand footer ul li :hover {
+  color: white;
+}
+#containerMeetTheBand footer ul li a {
+  padding: 0px 10px;
+  font-weight: 400;
+  font-family: "Merriweather", serif;
+}
+#containerMeetTheBand footer .footerTop {
+  height: 20vh;
+  background-color: #323944;
+  padding-left: 30px;
+  padding-right: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#containerMeetTheBand footer .footerBottom {
+  height: 15vh;
+  background-color: #252B33;
+  padding-left: 30px;
+  padding-right: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#containerMeetTheBand footer .footerBottom ul:first-child li a {
+  font-size: 10px;
+  font-weight: 400;
+  border-right: 1px solid #7D7C8D;
+}
+#containerMeetTheBand footer .footerBottom ul:first-child li:last-child a {
+  border: none;
+}
+#containerMeetTheBand footer .footerBottom ul:last-child li {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin: 5px;
+  background-color: #323944;
+}
+#containerMeetTheBand footer div:last-child {
+  width: 50px;
+  background-color: #323233;
+  color: white;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  right: 75px;
+  border-radius: 5px;
+  z-index: 10;
+}
+#containerMeetTheBand footer div:last-child i {
+  padding: 5px;
+}
+#containerMeetTheBand footer div:last-child i:hover {
+  color: white;
+}
+#containerMeetTheBand footer div:last-child:hover {
+  background-color: #EC4857;
+}

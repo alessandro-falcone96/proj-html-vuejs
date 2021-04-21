@@ -1,0 +1,113 @@
+#containerMeetTheBand .primaSezione{
+  background-color: $coloreGrigioChiaro;
+
+  & .containerProfili{
+    width: 80%;
+    margin: auto;
+    // border: 1px solid yellow;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+    & .profilo{
+      // border: 1px solid blue;
+      width: 23%;
+      text-align: center;
+
+      & img{
+        width: 100%;
+      }
+
+      & h3{
+        color: white;
+        font-weight: 400;
+        padding: 25px 0px;
+      }
+
+      & ul li{
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        text-align: center;
+        margin: 5px;
+        background-color: $coloreRossiccio;
+
+        & a{
+          color: $coloreGrigioChiaro;
+        }
+      }
+
+      & p{
+        line-height: 30px;
+        padding-top: 30px;
+      }
+    }
+  }
+}
+
+#containerMeetTheBand .secondaSezione{
+  background-color: $coloreGrigioScuro;
+  display: flex;
+
+  & .descrizione{
+    width: 60%;
+    padding: 50px 50px 100px 50px;
+
+    & hr{
+      width: 50%;
+      margin-left: 0;
+    }
+
+    & p{
+      line-height: 30px;
+      margin: 20px 0px;
+    }
+  }
+
+  & .frase{
+    width: 40%;
+    background-image: url("../img/meetTheBand/about-quote.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & p{
+      font-style: italic;
+      font-size: $fontMedio;
+      color: white;
+      text-align: center;
+      width: 85%;
+      line-height: 35px;
+      margin-bottom: 30px;
+    }
+
+    & span{
+      color: white;
+    }
+  }
+}
+
+#containerMeetTheBand .terzaSezione{
+  height: 80vh;
+  background-image: url("../img/meetTheBand/about_video_parallax.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#containerMeetTheBand .quartaSezione{
+  background-color: $coloreGrigioChiaro;
+
+  & .containerFoto{
+    margin-top: 50px;
+
+    & img{
+      width: 25%;
+    }
+  }
+}

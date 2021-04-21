@@ -134,9 +134,36 @@ var app = new Vue (
         }
       ],
 
+      // Meet The Band
+      listaProfili: [
+        {
+          foto: "img/meetTheBand/team1.jpg",
+          nome: "JOHN",
+        },
+        {
+          foto: "img/meetTheBand/team2.jpg",
+          nome: "PAUL",
+        },
+        {
+          foto: "img/meetTheBand/team3.jpg",
+          nome: "SILVIA",
+        },
+        {
+          foto: "img/meetTheBand/team4.jpg",
+          nome: "KATURO",
+        },
+      ],
+      listaFoto: [
+        "img/meetTheBand/about-gallery1.jpg",
+        "img/meetTheBand/about-gallery2.jpg",
+        "img/meetTheBand/about-gallery3.jpg",
+        "img/meetTheBand/about-gallery4.jpg"
+      ],
+
       // General
-      isMainPageVisible: true,
+      isMainPageVisible: false,
       isLiveDatesVisible: false,
+      isMeetTheBandVisible: true,
     },
     mounted: function() {
 
