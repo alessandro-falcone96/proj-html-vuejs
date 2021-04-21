@@ -1,5 +1,12 @@
 .primaSezione{
   background-color: $coloreGrigioChiaro;
+  & .contenuto{
+    & h2{
+      width: 60%;
+      margin: auto;
+      border-top: 15px solid $coloreRossiccio;
+    }
+  }
 }
 
 .secondaSezione{
