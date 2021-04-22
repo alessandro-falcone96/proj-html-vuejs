@@ -26,8 +26,8 @@
 }
 
 .btnRosso {
-  border: 1px solid #EC4857;
-  background-color: #EC4857;
+  border: 1px solid #805876;
+  background-color: #805876;
 }
 
 ul li {
@@ -53,7 +53,7 @@ h2 {
 }
 
 h3 {
-  color: #EC4857;
+  color: #805876;
 }
 
 .contenuto {
@@ -79,7 +79,7 @@ hr {
   width: 40%;
   margin: auto;
   height: 15px;
-  background-color: #EC4857;
+  background-color: #805876;
 }
 
 .containerDate {
@@ -88,7 +88,7 @@ hr {
 }
 .containerDate ul li {
   display: block;
-  color: #EC4857;
+  color: #805876;
   background-color: #323944;
   padding: 20px 0px;
   margin: 10px 0px;
@@ -106,7 +106,7 @@ hr {
   background-color: #373E4A;
 }
 .containerDate ul li:hover i {
-  background-color: #EC4857;
+  background-color: #805876;
   transition: 0.5s;
 }
 .containerDate ul li .containerLuogoConcerto {
@@ -198,7 +198,7 @@ footer div:last-child i:hover {
   color: white;
 }
 footer div:last-child:hover {
-  background-color: #EC4857;
+  background-color: #805876;
 }
 
 #containerMainPage header {
@@ -227,7 +227,7 @@ footer div:last-child:hover {
 #containerMainPage header .menu {
   height: 100vh;
   width: 100%;
-  background-color: #EC4857;
+  background-color: #805876;
   position: fixed;
   z-index: 10;
 }
@@ -426,7 +426,7 @@ footer div:last-child:hover {
 }
 
 #containerMainPage .terzaSezione, #containerMainPage .sestaSezione {
-  background-color: #EC4857;
+  background-color: #805876;
   color: white;
   text-align: center;
   padding: 75px 0px;
@@ -513,7 +513,7 @@ footer div:last-child:hover {
 #containerLiveDates header .menu {
   height: 100vh;
   width: 100%;
-  background-color: #EC4857;
+  background-color: #805876;
   position: fixed;
   z-index: 10;
 }
@@ -643,7 +643,7 @@ footer div:last-child:hover {
 }
 
 #containerLiveDates .quartaSezione {
-  background-color: #EC4857;
+  background-color: #805876;
   color: white;
   text-align: center;
   padding: 75px 0px;
@@ -694,7 +694,7 @@ footer div:last-child:hover {
 #containerMeetTheBand header .menu {
   height: 100vh;
   width: 100%;
-  background-color: #EC4857;
+  background-color: #805876;
   position: fixed;
   z-index: 10;
 }
@@ -785,7 +785,7 @@ footer div:last-child:hover {
   line-height: 40px;
   text-align: center;
   margin: 5px;
-  background-color: #EC4857;
+  background-color: #805876;
   border-radius: 3px;
 }
 #containerMeetTheBand .primaSezione .containerProfili .profilo ul li a {
@@ -893,7 +893,7 @@ footer div:last-child:hover {
 #containerLatesNews header .menu {
   height: 100vh;
   width: 100%;
-  background-color: #EC4857;
+  background-color: #805876;
   position: fixed;
   z-index: 10;
 }
@@ -1180,7 +1180,7 @@ footer div:last-child:hover {
 }
 
 #containerLatesNews .quartaSezione {
-  background-color: #EC4857;
+  background-color: #805876;
   color: white;
   text-align: center;
   padding: 75px 0px;
@@ -1231,7 +1231,7 @@ footer div:last-child:hover {
 #containerAlbums header .menu {
   height: 100vh;
   width: 100%;
-  background-color: #EC4857;
+  background-color: #805876;
   position: fixed;
   z-index: 10;
 }
@@ -1339,7 +1339,7 @@ footer div:last-child:hover {
 }
 
 #containerAlbums .terzaSezione {
-  background-color: #EC4857;
+  background-color: #805876;
   color: white;
   text-align: center;
   padding: 75px 0px;
@@ -1428,7 +1428,7 @@ footer div:last-child:hover {
 #containerFans header .menu {
   height: 100vh;
   width: 100%;
-  background-color: #EC4857;
+  background-color: #805876;
   position: fixed;
   z-index: 10;
 }
@@ -1490,7 +1490,7 @@ footer div:last-child:hover {
   line-height: 40px;
   text-align: center;
   margin: 5px;
-  background-color: #EC4857;
+  background-color: #805876;
 }
 #containerFans .primaSezione ul li a {
   color: #323944;
@@ -1556,7 +1556,7 @@ footer div:last-child:hover {
 }
 
 #containerFans .quartaSezione {
-  background-color: #EC4857;
+  background-color: #805876;
   color: white;
   text-align: center;
   padding: 75px 0px;
