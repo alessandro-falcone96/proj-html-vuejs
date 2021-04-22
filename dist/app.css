@@ -852,9 +852,19 @@ footer div:last-child:hover {
 }
 #containerMeetTheBand .quartaSezione .containerFoto {
   margin-top: 50px;
+  display: flex;
+}
+#containerMeetTheBand .quartaSezione .containerFoto div {
+  width: 25%;
+  overflow: hidden;
 }
 #containerMeetTheBand .quartaSezione .containerFoto img {
-  width: 25%;
+  width: 100%;
+  transition: 1s;
+}
+#containerMeetTheBand .quartaSezione .containerFoto img:hover {
+  transition: 1;
+  transform: scale(1.1);
 }
 
 #containerLatesNews header {

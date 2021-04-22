@@ -2,7 +2,34 @@ var app = new Vue (
   {
     el: "#app",
     data: {
+
       // General
+      listaMenu: [
+        {
+          name: "Home",
+          isVisible: true
+        },
+        {
+          name: "Meet The Band",
+          isVisible: false
+        },
+        {
+          name: "Live Dates",
+          isVisible: false
+        },
+        {
+          name: "Latest News",
+          isVisible: false
+        },
+        {
+          name: "Albums",
+          isVisible: false
+        },
+        {
+          name: "Fans",
+          isVisible: false
+        },
+      ],
       listaFooterTop: [
         "Home",
         "Meet The Band",
@@ -10,38 +37,6 @@ var app = new Vue (
         "Latest News",
         "Albums",
         "Fans"
-      ],
-      listaMenu: [
-        {
-          name: "Home",
-          link: "#app",
-          isVisible: true
-        },
-        {
-          name: "Meet The Band",
-          link: "#",
-          isVisible: false
-        },
-        {
-          name: "Live Dates",
-          link: "#liveDates",
-          isVisible: false
-        },
-        {
-          name: "Latest News",
-          link: "#latestNews",
-          isVisible: false
-        },
-        {
-          name: "Albums",
-          link: "#",
-          isVisible: false
-        },
-        {
-          name: "Fans",
-          link: "#",
-          isVisible: false
-        },
       ],
       listaFooterBottom: [
         "© Copyright 2012-2020",
