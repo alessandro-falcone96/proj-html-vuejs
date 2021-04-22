@@ -186,12 +186,15 @@ var app = new Vue (
         },
       ],
 
+      // Fans
+
       // General
       isMainPageVisible: false,
       isLiveDatesVisible: false,
       isMeetTheBandVisible: false,
       isLatestNewsVisible: false,
-      isAlbumsVisible: true
+      isAlbumsVisible: false,
+      isFansVisible: true
     },
     mounted: function() {
 
