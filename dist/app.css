@@ -964,3 +964,387 @@ hr {
 #containerMeetTheBand footer div:last-child:hover {
   background-color: #EC4857;
 }
+
+#containerLatesNews header {
+  height: 100vh;
+  background-image: url("../img/latestNews/latest_news_slider_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  position: relative;
+}
+#containerLatesNews header .headerTop {
+  height: 100px;
+  display: flex;
+  padding: 20px 50px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: rgba(37, 43, 51, 0.7);
+}
+#containerLatesNews header .headerTop img, #containerLatesNews header .headerTop i {
+  cursor: pointer;
+}
+#containerLatesNews header .menu {
+  height: 100vh;
+  width: 100%;
+  background-color: #EC4857;
+  position: fixed;
+  z-index: 10;
+}
+#containerLatesNews header .menu .headerMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 50px;
+}
+#containerLatesNews header .menu .headerMenu i {
+  cursor: pointer;
+  color: #aeaeaf;
+}
+#containerLatesNews header .menu .headerMenu i:hover {
+  color: white;
+}
+#containerLatesNews header .menu ul li {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  padding: 35px 0px;
+}
+#containerLatesNews header .menu ul li a {
+  color: #aeaeaf;
+  font-family: "Montserrat", sans-serif;
+}
+#containerLatesNews header .menu ul li a:hover {
+  color: white;
+}
+#containerLatesNews header .headerCenter {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#containerLatesNews header .headerCenter h1 {
+  font-size: 150px;
+  letter-spacing: 5px;
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+}
+#containerLatesNews header .headerCenter h4 {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 300;
+  padding: 50px 0px 50px 0px;
+  font-family: "Merriweather", serif;
+}
+
+#containerLatesNews .primaSezione {
+  background-color: #252B33;
+  padding-bottom: 100px;
+}
+#containerLatesNews .primaSezione .containerNews {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0px auto 0px auto;
+}
+#containerLatesNews .primaSezione .containerNews .containerSinistra {
+  width: 66%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#containerLatesNews .primaSezione .containerNews .containerSinistra div {
+  background-color: #323944;
+  border: 1px solid #323944;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+#containerLatesNews .primaSezione .containerNews .containerSinistra div .container {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  transition: all 0.5s ease-in-out;
+  transform: scaleY(1);
+  z-index: 1;
+}
+#containerLatesNews .primaSezione .containerNews .containerSinistra div:hover .container {
+  transform: translateY(100%);
+  transition: all 0.5s ease-in-out;
+}
+#containerLatesNews .primaSezione .containerNews .containerSinistra div.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateX(-100%);
+  background-color: rgba(236, 72, 87, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+#containerLatesNews .primaSezione .containerNews .containerSinistra div.overlay h3.overlayTitle {
+  padding: 0;
+  color: white;
+}
+#containerLatesNews .primaSezione .containerNews .containerSinistra div:hover .overlay {
+  transition: all 0.5s ease-in-out;
+  transform: translateX(0);
+}
+#containerLatesNews .primaSezione .containerNews .containerSinistra div.technologyMusic, #containerLatesNews .primaSezione .containerNews .containerSinistra div.rockFlavour {
+  width: 100%;
+}
+#containerLatesNews .primaSezione .containerNews .containerSinistra div.technologyMusic img, #containerLatesNews .primaSezione .containerNews .containerSinistra div.rockFlavour img {
+  width: 100%;
+  height: 100%;
+}
+#containerLatesNews .primaSezione .containerNews .containerSinistra div.guitarWeeps, #containerLatesNews .primaSezione .containerNews .containerSinistra div.soundsBetter {
+  width: 48%;
+  margin: 35px 0px;
+}
+#containerLatesNews .primaSezione .containerNews .containerSinistra div.guitarWeeps img, #containerLatesNews .primaSezione .containerNews .containerSinistra div.soundsBetter img {
+  width: 100%;
+  height: 100%;
+}
+#containerLatesNews .primaSezione .containerNews .containerDestra {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#containerLatesNews .primaSezione .containerNews .containerDestra div.oldSchool, #containerLatesNews .primaSezione .containerNews .containerDestra div.stageLegend {
+  border: 1px solid #323944;
+  padding-bottom: 25px;
+  cursor: pointer;
+  height: 50%;
+  position: relative;
+  overflow: hidden;
+}
+#containerLatesNews .primaSezione .containerNews .containerDestra div.oldSchool .container, #containerLatesNews .primaSezione .containerNews .containerDestra div.stageLegend .container {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #323944;
+  transition: all 0.5s ease-in-out;
+  transform: scaleY(1);
+  z-index: 1;
+}
+#containerLatesNews .primaSezione .containerNews .containerDestra div.oldSchool:hover .container, #containerLatesNews .primaSezione .containerNews .containerDestra div.stageLegend:hover .container {
+  transform: translateY(100%);
+  transition: all 0.5s ease-in-out;
+}
+#containerLatesNews .primaSezione .containerNews .containerDestra div.oldSchool .overlay, #containerLatesNews .primaSezione .containerNews .containerDestra div.stageLegend .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateX(-100%);
+  background-color: rgba(236, 72, 87, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+#containerLatesNews .primaSezione .containerNews .containerDestra div.oldSchool .overlay h3.overlayTitle, #containerLatesNews .primaSezione .containerNews .containerDestra div.stageLegend .overlay h3.overlayTitle {
+  padding: 0;
+  color: white;
+}
+#containerLatesNews .primaSezione .containerNews .containerDestra div.oldSchool:hover .overlay, #containerLatesNews .primaSezione .containerNews .containerDestra div.stageLegend:hover .overlay {
+  transition: all 0.5s ease-in-out;
+  transform: translateX(0);
+}
+#containerLatesNews .primaSezione .containerNews .containerDestra div.oldSchool.oldSchool, #containerLatesNews .primaSezione .containerNews .containerDestra div.stageLegend.oldSchool {
+  margin-bottom: 25px;
+}
+#containerLatesNews .primaSezione .containerNews .containerDestra div.oldSchool img, #containerLatesNews .primaSezione .containerNews .containerDestra div.stageLegend img {
+  width: 100%;
+  height: 105%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+#containerLatesNews .primaSezione .containerNews h3 {
+  padding-top: 35px;
+  padding-left: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+#containerLatesNews .primaSezione .containerNews p {
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-bottom: 35px;
+  font-family: "Merriweather", serif;
+}
+
+#containerLatesNews .secondaSezione {
+  height: 60vh;
+  background-image: url("../img/latestNews/latest-news-parallax.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+}
+#containerLatesNews .secondaSezione div {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#containerLatesNews .secondaSezione div p {
+  color: white;
+  font-size: 30px;
+  line-height: 55px;
+  text-align: center;
+  font-style: italic;
+  font-family: "Merriweather", serif;
+}
+#containerLatesNews .secondaSezione div span {
+  padding-top: 30px;
+}
+#containerLatesNews .secondaSezione div span i {
+  color: white;
+}
+
+#containerLatesNews .terzaSezione {
+  background-color: #252B33;
+  padding-bottom: 150px;
+}
+#containerLatesNews .terzaSezione .containerArticoli {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+#containerLatesNews .terzaSezione .containerArticoli h3 {
+  padding: 10px 0px;
+}
+#containerLatesNews .terzaSezione .containerArticoli p {
+  line-height: 25px;
+}
+#containerLatesNews .terzaSezione .containerArticoli > div {
+  width: 48%;
+}
+#containerLatesNews .terzaSezione .containerArticoli > div.sinistra img {
+  width: 100%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#containerLatesNews .terzaSezione .containerArticoli > div.destra .containerFotoDescrizione {
+  display: flex;
+  margin-bottom: 25px;
+}
+#containerLatesNews .terzaSezione .containerArticoli > div.destra .containerFotoDescrizione .containerFoto {
+  height: 150px;
+  width: 150px;
+}
+#containerLatesNews .terzaSezione .containerArticoli > div.destra .containerFotoDescrizione .containerFoto img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#containerLatesNews .terzaSezione .containerArticoli > div.destra .containerFotoDescrizione .descrizione {
+  width: calc(100% - 150px);
+  margin-left: 10px;
+}
+
+#containerLatesNews .quartaSezione {
+  background-color: #EC4857;
+  color: white;
+  text-align: center;
+  padding: 75px 0px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+#containerLatesNews .quartaSezione:hover {
+  color: black;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+#containerLatesNews .quartaSezione h4 {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "PT Sans", sans-serif;
+}
+
+#containerLatesNews footer {
+  height: 35vh;
+  background-color: red;
+}
+#containerLatesNews footer ul li :hover {
+  color: white;
+}
+#containerLatesNews footer ul li a {
+  padding: 0px 10px;
+  font-weight: 400;
+  font-family: "Merriweather", serif;
+}
+#containerLatesNews footer .footerTop {
+  height: 20vh;
+  background-color: #323944;
+  padding-left: 30px;
+  padding-right: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#containerLatesNews footer .footerBottom {
+  height: 15vh;
+  background-color: #252B33;
+  padding-left: 30px;
+  padding-right: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#containerLatesNews footer .footerBottom ul:first-child li a {
+  font-size: 10px;
+  font-weight: 400;
+  border-right: 1px solid #7D7C8D;
+}
+#containerLatesNews footer .footerBottom ul:first-child li:last-child a {
+  border: none;
+}
+#containerLatesNews footer .footerBottom ul:last-child li {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin: 5px;
+  background-color: #323944;
+}
+#containerLatesNews footer div:last-child {
+  width: 50px;
+  background-color: #323233;
+  color: white;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  right: 75px;
+  border-radius: 5px;
+  z-index: 10;
+}
+#containerLatesNews footer div:last-child i {
+  padding: 5px;
+}
+#containerLatesNews footer div:last-child i:hover {
+  color: white;
+}
+#containerLatesNews footer div:last-child:hover {
+  background-color: #EC4857;
+}

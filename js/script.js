@@ -160,10 +160,13 @@ var app = new Vue (
         "img/meetTheBand/about-gallery4.jpg"
       ],
 
+      // Latest News
+
       // General
       isMainPageVisible: false,
       isLiveDatesVisible: false,
-      isMeetTheBandVisible: true,
+      isMeetTheBandVisible: false,
+      isLatestNewsVisible: true
     },
     mounted: function() {
 

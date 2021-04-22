@@ -1,0 +1,293 @@
+#containerLatesNews .primaSezione{
+  background-color: $coloreGrigioScuro;
+  padding-bottom: 100px;
+
+  & .containerNews{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0px auto 0px auto;
+
+
+    & .containerSinistra{
+      width: 66%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      & div{
+        background-color: $coloreGrigioChiaro;
+        border: 1px solid $coloreGrigioChiaro;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+
+        & .container{
+          width: 100%;
+          position: absolute;
+          bottom: 0;
+          transition: all .5s ease-in-out;
+          transform: scaleY(1);
+          z-index: 1;
+        }
+
+        &:hover .container{
+          transform: translateY(100%);
+          transition: all .5s ease-in-out;
+        }
+
+        &.overlay{
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          transform: translateX(-100%);
+          background-color: rgba(236, 72, 87, 0.6);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: all .5s ease-in-out;
+
+          & h3.overlayTitle{
+            padding: 0;
+            color: white;
+          }
+        }
+
+        &:hover .overlay{
+          transition: all .5s ease-in-out;
+          transform: translateX(0);
+        }
+
+        &.technologyMusic, &.rockFlavour{
+          width: 100%;
+
+          & img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        &.guitarWeeps, &.soundsBetter{
+          width: 48%;
+          margin: 35px 0px;
+
+          & img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+      }
+    }
+
+    & .containerDestra{
+      width: 32%;
+      // border: 1px solid blue;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      & div.oldSchool, & div.stageLegend{
+        border: 1px solid $coloreGrigioChiaro;
+        padding-bottom: 25px;
+        cursor: pointer;
+        height: 50%;
+        position: relative;
+        overflow: hidden;
+        // border: 1px solid green;
+
+        & .container{
+          width: 100%;
+          position: absolute;
+          bottom: 0;
+          background-color: $coloreGrigioChiaro;
+          // border: 1px solid blue;
+          transition: all .5s ease-in-out;
+          transform: scaleY(1);
+          z-index: 1;
+        }
+
+        &:hover .container{
+          transform: translateY(100%);
+          transition: all .5s ease-in-out;
+        }
+
+        & .overlay{
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          transform: translateX(-100%);
+          background-color: rgba(236, 72, 87, 0.6);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: all .5s ease-in-out;
+
+          & h3.overlayTitle{
+            padding: 0;
+            color: white;
+          }
+        }
+
+        &:hover .overlay{
+          transition: all .5s ease-in-out;
+          transform: translateX(0);
+        }
+
+        &.oldSchool{
+          margin-bottom: 25px;
+        }
+
+        & img{
+          width: 100%;
+          height: 105%;
+          // border: 1px solid green;
+          object-fit: cover;
+          object-position: center center;
+        }
+
+      }
+
+    }
+
+    & h3{
+      padding-top: 35px;
+      padding-left: 15px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    & p{
+      padding-top: 20px;
+      padding-left: 15px;
+      padding-bottom: 35px;
+      font-family: 'Merriweather', serif;
+    }
+  }
+}
+
+#containerLatesNews .secondaSezione{
+  height: 60vh;
+  // border: 1px solid orange;
+  background-image: url("../img/latestNews/latest-news-parallax.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+
+  & div{
+    // border: 1px solid white;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    & p{
+      color: white;
+      font-size: $fontMedio;
+      line-height: 55px;
+      text-align: center;
+      font-style: italic;
+      font-family: 'Merriweather', serif;
+    }
+
+    & span{
+      padding-top: 30px;
+
+      & i{
+        color: white;
+      }
+    }
+  }
+}
+
+#containerLatesNews .terzaSezione{
+  background-color: $coloreGrigioScuro;
+  padding-bottom: 150px;
+
+  & .containerArticoli{
+    width: 80%;
+    margin: auto;
+    // border: 1px solid blue;
+    display: flex;
+    justify-content: space-between;
+
+    & h3{
+      padding: 10px 0px;
+    }
+
+    & p{
+      line-height: 25px;
+    }
+
+    & > div{
+      // border: 1px solid green;
+      width: 48%;
+
+      &.sinistra{
+
+        & img{
+          width: 100%;
+          height: 350px;
+          object-fit: cover;
+        }
+      }
+
+      &.destra{
+
+        & .containerFotoDescrizione{
+          // border: 1px solid yellow;
+          display: flex;
+          margin-bottom: 25px;
+
+          & .containerFoto{
+            // border: 1px solid green;
+            height: 150px;
+            width: 150px;
+
+            & img{
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+
+          & .descrizione{
+            // border: 1px solid orange;
+            width: calc(100% - 150px);
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+#containerLatesNews .quartaSezione{
+  background-color: $coloreRossiccio;
+  color: white;
+  text-align: center;
+  padding: 75px 0px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+
+  &:hover{
+    color: black;
+    background-color: white;
+    transition: all .3s ease-in-out;
+  }
+
+  & h4{
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'PT Sans', sans-serif;
+  }
+}
