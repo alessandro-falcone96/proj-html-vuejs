@@ -134,6 +134,73 @@ hr {
   font-family: "Merriweather", serif;
 }
 
+footer {
+  height: 35vh;
+  background-color: red;
+}
+footer ul li :hover {
+  color: white;
+}
+footer ul li a {
+  padding: 0px 10px;
+  font-weight: 400;
+  font-family: "Merriweather", serif;
+}
+footer .footerTop {
+  height: 23vh;
+  background-color: #323944;
+  padding-left: 30px;
+  padding-right: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footerBottom {
+  height: 18vh;
+  background-color: #252B33;
+  padding-left: 30px;
+  padding-right: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footerBottom ul:first-child li a {
+  font-size: 10px;
+  font-weight: 400;
+  border-right: 1px solid #7D7C8D;
+}
+footer .footerBottom ul:first-child li:last-child a {
+  border: none;
+}
+footer .footerBottom ul:last-child li {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin: 5px;
+  background-color: #323944;
+}
+footer div:last-child {
+  width: 50px;
+  background-color: #323233;
+  color: white;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  right: 75px;
+  border-radius: 5px;
+  z-index: 10;
+}
+footer div:last-child i {
+  padding: 5px;
+}
+footer div:last-child i:hover {
+  color: white;
+}
+footer div:last-child:hover {
+  background-color: #EC4857;
+}
+
 #containerMainPage header {
   height: 100vh;
   background-image: url("../img/mainPage/home_slider.jpg");
@@ -420,73 +487,6 @@ hr {
   padding-bottom: 150px;
 }
 
-#containerMainPage footer {
-  height: 35vh;
-  background-color: red;
-}
-#containerMainPage footer ul li :hover {
-  color: white;
-}
-#containerMainPage footer ul li a {
-  padding: 0px 10px;
-  font-weight: 400;
-  font-family: "Merriweather", serif;
-}
-#containerMainPage footer .footerTop {
-  height: 20vh;
-  background-color: #323944;
-  padding-left: 30px;
-  padding-right: 25px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-#containerMainPage footer .footerBottom {
-  height: 15vh;
-  background-color: #252B33;
-  padding-left: 30px;
-  padding-right: 25px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-#containerMainPage footer .footerBottom ul:first-child li a {
-  font-size: 10px;
-  font-weight: 400;
-  border-right: 1px solid #7D7C8D;
-}
-#containerMainPage footer .footerBottom ul:first-child li:last-child a {
-  border: none;
-}
-#containerMainPage footer .footerBottom ul:last-child li {
-  height: 40px;
-  width: 40px;
-  line-height: 40px;
-  text-align: center;
-  margin: 5px;
-  background-color: #323944;
-}
-#containerMainPage footer div:last-child {
-  width: 50px;
-  background-color: #323233;
-  color: white;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  right: 75px;
-  border-radius: 5px;
-  z-index: 10;
-}
-#containerMainPage footer div:last-child i {
-  padding: 5px;
-}
-#containerMainPage footer div:last-child i:hover {
-  color: white;
-}
-#containerMainPage footer div:last-child:hover {
-  background-color: #EC4857;
-}
-
 #containerLiveDates header {
   height: 100vh;
   background-image: url("../img/liveDates/live_date_slide.jpg");
@@ -666,73 +666,6 @@ hr {
 #containerLiveDates .quartaSezione h4 a {
   color: white;
   text-decoration: none;
-}
-
-#containerLiveDates footer {
-  height: 35vh;
-  background-color: red;
-}
-#containerLiveDates footer ul li :hover {
-  color: white;
-}
-#containerLiveDates footer ul li a {
-  padding: 0px 10px;
-  font-weight: 400;
-  font-family: "Merriweather", serif;
-}
-#containerLiveDates footer .footerTop {
-  height: 20vh;
-  background-color: #323944;
-  padding-left: 30px;
-  padding-right: 25px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-#containerLiveDates footer .footerBottom {
-  height: 15vh;
-  background-color: #252B33;
-  padding-left: 30px;
-  padding-right: 25px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-#containerLiveDates footer .footerBottom ul:first-child li a {
-  font-size: 10px;
-  font-weight: 400;
-  border-right: 1px solid #7D7C8D;
-}
-#containerLiveDates footer .footerBottom ul:first-child li:last-child a {
-  border: none;
-}
-#containerLiveDates footer .footerBottom ul:last-child li {
-  height: 40px;
-  width: 40px;
-  line-height: 40px;
-  text-align: center;
-  margin: 5px;
-  background-color: #323944;
-}
-#containerLiveDates footer div:last-child {
-  width: 50px;
-  background-color: #323233;
-  color: white;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  right: 75px;
-  border-radius: 5px;
-  z-index: 10;
-}
-#containerLiveDates footer div:last-child i {
-  padding: 5px;
-}
-#containerLiveDates footer div:last-child i:hover {
-  color: white;
-}
-#containerLiveDates footer div:last-child:hover {
-  background-color: #EC4857;
 }
 
 #containerMeetTheBand header {
@@ -922,73 +855,6 @@ hr {
 }
 #containerMeetTheBand .quartaSezione .containerFoto img {
   width: 25%;
-}
-
-#containerMeetTheBand footer {
-  height: 35vh;
-  background-color: red;
-}
-#containerMeetTheBand footer ul li :hover {
-  color: white;
-}
-#containerMeetTheBand footer ul li a {
-  padding: 0px 10px;
-  font-weight: 400;
-  font-family: "Merriweather", serif;
-}
-#containerMeetTheBand footer .footerTop {
-  height: 20vh;
-  background-color: #323944;
-  padding-left: 30px;
-  padding-right: 25px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-#containerMeetTheBand footer .footerBottom {
-  height: 15vh;
-  background-color: #252B33;
-  padding-left: 30px;
-  padding-right: 25px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-#containerMeetTheBand footer .footerBottom ul:first-child li a {
-  font-size: 10px;
-  font-weight: 400;
-  border-right: 1px solid #7D7C8D;
-}
-#containerMeetTheBand footer .footerBottom ul:first-child li:last-child a {
-  border: none;
-}
-#containerMeetTheBand footer .footerBottom ul:last-child li {
-  height: 40px;
-  width: 40px;
-  line-height: 40px;
-  text-align: center;
-  margin: 5px;
-  background-color: #323944;
-}
-#containerMeetTheBand footer div:last-child {
-  width: 50px;
-  background-color: #323233;
-  color: white;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  right: 75px;
-  border-radius: 5px;
-  z-index: 10;
-}
-#containerMeetTheBand footer div:last-child i {
-  padding: 5px;
-}
-#containerMeetTheBand footer div:last-child i:hover {
-  color: white;
-}
-#containerMeetTheBand footer div:last-child:hover {
-  background-color: #EC4857;
 }
 
 #containerLatesNews header {
@@ -1329,73 +1195,6 @@ hr {
   text-decoration: none;
 }
 
-#containerLatesNews footer {
-  height: 35vh;
-  background-color: red;
-}
-#containerLatesNews footer ul li :hover {
-  color: white;
-}
-#containerLatesNews footer ul li a {
-  padding: 0px 10px;
-  font-weight: 400;
-  font-family: "Merriweather", serif;
-}
-#containerLatesNews footer .footerTop {
-  height: 20vh;
-  background-color: #323944;
-  padding-left: 30px;
-  padding-right: 25px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-#containerLatesNews footer .footerBottom {
-  height: 15vh;
-  background-color: #252B33;
-  padding-left: 30px;
-  padding-right: 25px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-#containerLatesNews footer .footerBottom ul:first-child li a {
-  font-size: 10px;
-  font-weight: 400;
-  border-right: 1px solid #7D7C8D;
-}
-#containerLatesNews footer .footerBottom ul:first-child li:last-child a {
-  border: none;
-}
-#containerLatesNews footer .footerBottom ul:last-child li {
-  height: 40px;
-  width: 40px;
-  line-height: 40px;
-  text-align: center;
-  margin: 5px;
-  background-color: #323944;
-}
-#containerLatesNews footer div:last-child {
-  width: 50px;
-  background-color: #323233;
-  color: white;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  right: 75px;
-  border-radius: 5px;
-  z-index: 10;
-}
-#containerLatesNews footer div:last-child i {
-  padding: 5px;
-}
-#containerLatesNews footer div:last-child i:hover {
-  color: white;
-}
-#containerLatesNews footer div:last-child:hover {
-  background-color: #EC4857;
-}
-
 #containerAlbums header {
   height: 100vh;
   background-image: url("../img/albums/page-title-bar-bkgd.jpg");
@@ -1593,73 +1392,6 @@ hr {
   color: white;
 }
 
-#containerAlbums footer {
-  height: 35vh;
-  background-color: red;
-}
-#containerAlbums footer ul li :hover {
-  color: white;
-}
-#containerAlbums footer ul li a {
-  padding: 0px 10px;
-  font-weight: 400;
-  font-family: "Merriweather", serif;
-}
-#containerAlbums footer .footerTop {
-  height: 20vh;
-  background-color: #323944;
-  padding-left: 30px;
-  padding-right: 25px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-#containerAlbums footer .footerBottom {
-  height: 15vh;
-  background-color: #252B33;
-  padding-left: 30px;
-  padding-right: 25px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-#containerAlbums footer .footerBottom ul:first-child li a {
-  font-size: 10px;
-  font-weight: 400;
-  border-right: 1px solid #7D7C8D;
-}
-#containerAlbums footer .footerBottom ul:first-child li:last-child a {
-  border: none;
-}
-#containerAlbums footer .footerBottom ul:last-child li {
-  height: 40px;
-  width: 40px;
-  line-height: 40px;
-  text-align: center;
-  margin: 5px;
-  background-color: #323944;
-}
-#containerAlbums footer div:last-child {
-  width: 50px;
-  background-color: #323233;
-  color: white;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  right: 75px;
-  border-radius: 5px;
-  z-index: 10;
-}
-#containerAlbums footer div:last-child i {
-  padding: 5px;
-}
-#containerAlbums footer div:last-child i:hover {
-  color: white;
-}
-#containerAlbums footer div:last-child:hover {
-  background-color: #EC4857;
-}
-
 #containerFans header {
   height: 100vh;
   background-image: url("../img/fans/product_slider.jpg");
@@ -1837,71 +1569,4 @@ hr {
 #containerFans .quartaSezione h4 a {
   color: white;
   text-decoration: none;
-}
-
-#containerFans footer {
-  height: 35vh;
-  background-color: red;
-}
-#containerFans footer ul li :hover {
-  color: white;
-}
-#containerFans footer ul li a {
-  padding: 0px 10px;
-  font-weight: 400;
-  font-family: "Merriweather", serif;
-}
-#containerFans footer .footerTop {
-  height: 20vh;
-  background-color: #323944;
-  padding-left: 30px;
-  padding-right: 25px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-#containerFans footer .footerBottom {
-  height: 15vh;
-  background-color: #252B33;
-  padding-left: 30px;
-  padding-right: 25px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-#containerFans footer .footerBottom ul:first-child li a {
-  font-size: 10px;
-  font-weight: 400;
-  border-right: 1px solid #7D7C8D;
-}
-#containerFans footer .footerBottom ul:first-child li:last-child a {
-  border: none;
-}
-#containerFans footer .footerBottom ul:last-child li {
-  height: 40px;
-  width: 40px;
-  line-height: 40px;
-  text-align: center;
-  margin: 5px;
-  background-color: #323944;
-}
-#containerFans footer div:last-child {
-  width: 50px;
-  background-color: #323233;
-  color: white;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  right: 75px;
-  border-radius: 5px;
-  z-index: 10;
-}
-#containerFans footer div:last-child i {
-  padding: 5px;
-}
-#containerFans footer div:last-child i:hover {
-  color: white;
-}
-#containerFans footer div:last-child:hover {
-  background-color: #EC4857;
 }
