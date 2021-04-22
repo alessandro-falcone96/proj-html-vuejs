@@ -1,0 +1,126 @@
+#containerAlbums .primaSezione{
+  background-color: $coloreGrigioChiaro;
+
+  & .containerFoto{
+    margin-top: 50px;
+
+    & img{
+      width: 25%;
+    }
+  }
+}
+
+#containerAlbums .secondaSezione{
+
+  & .containerAlbum{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+
+    &.bgGrigioChiaro{
+      background-color: $coloreGrigioChiaro;
+    }
+    &.bgGrigioScuro{
+      background-color: $coloreGrigioScuro;
+    }
+
+    & .container{
+      width: 40%;
+      // border: 1px solid blue;
+
+      & h2{
+        font-size: $fontMedio;
+        // border: 1px solid green;
+        padding-top: 0;
+      }
+
+      & h3{
+        font-style: italic;
+      }
+
+      & p{
+        line-height: 30px;
+        padding: 20px 0px;
+      }
+
+      & button{
+        border-radius: 3px;
+      }
+    }
+
+    & iframe{
+      width: 45%;
+      height: 35%;
+      // border: 1px solid yellow;
+    }
+
+  }
+}
+
+#containerAlbums .terzaSezione{
+  background-color: $coloreRossiccio;
+  color: white;
+  text-align: center;
+  padding: 75px 0px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+
+  &:hover{
+    color: black;
+    background-color: white;
+    transition: all .3s ease-in-out;
+  }
+
+  & h4{
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'PT Sans', sans-serif;
+  }
+}
+
+
+#containerAlbums .quartaSezione{
+  background-color: $coloreGrigioScuro;
+  display: flex;
+
+  & .descrizione{
+    width: 60%;
+    padding: 50px 50px 100px 50px;
+
+    & hr{
+      width: 50%;
+      margin-left: 0;
+    }
+
+    & p{
+      line-height: 30px;
+      margin: 20px 0px;
+    }
+  }
+
+  & .frase{
+    width: 40%;
+    background-image: url("../img/albums/about-quote.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & p{
+      font-style: italic;
+      font-size: $fontMedio;
+      color: white;
+      text-align: center;
+      width: 85%;
+      line-height: 35px;
+      margin-bottom: 30px;
+    }
+
+    & span{
+      color: white;
+    }
+  }
+}

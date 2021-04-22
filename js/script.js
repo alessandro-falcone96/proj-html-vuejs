@@ -162,11 +162,36 @@ var app = new Vue (
 
       // Latest News
 
+      // Albums
+      listaAlbums: [
+        {
+          title: "CHARLES MANSON (BUON NATALE2) [feat. Lazza]",
+          link: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/716459959&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+        },
+        {
+          title: "CABRIOLET (Live) [feat. Sfera Ebbasta]",
+          link: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/715430701&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+        },
+        {
+          title: "STAI ZITTO (Live) [feat. Fabri Fibra]",
+          link: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/715430518&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+        },
+        {
+          title: "IL CIELO NELLA STANZA (Live) [feat. NSTASIA]",
+          link: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/715430479&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+        },
+        {
+          title: "PERDONAMI (Live)",
+          link: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/715430251&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+        },
+      ],
+
       // General
       isMainPageVisible: false,
       isLiveDatesVisible: false,
       isMeetTheBandVisible: false,
-      isLatestNewsVisible: true
+      isLatestNewsVisible: false,
+      isAlbumsVisible: true
     },
     mounted: function() {
 

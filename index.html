@@ -707,7 +707,132 @@
           </div>
 
           <section class="quartaSezione">
-            <h4>View All Live Dates</h4>
+            <h4>View All Latest News</h4>
+          </section>
+
+        </main>
+
+        <footer>
+
+          <div class="footerTop">
+
+            <img src="img/mainPage/logo_footer.png" alt="">
+
+            <ul>
+              <li v-for="item in listaFooterTop"><a href="#">{{item}}</a></li>
+            </ul>
+
+          </div>
+
+          <div class="footerBottom">
+
+            <ul>
+              <li v-for="element in listaFooterBottom"><a href="#">{{element}}</a></li>
+            </ul>
+
+            <ul>
+              <li v-for="element in listaIconeSocial"><a href="#"><i class="fab fa-lg" :class="element"></i></a></li>
+            </ul>
+
+          </div>
+
+          <div class="">
+            <a href="#app"><i class="fas fa-chevron-up fa-2x"></i></a>
+          </div>
+
+        </footer>
+
+      </div>
+
+      <div id="containerAlbums" v-if="isAlbumsVisible == true">
+
+        <header>
+
+          <div class="headerTop">
+
+            <a href="#app"><img src="img/mainPage/avada-music-logo.png" alt=""></a>
+            <i class="fas fa-bars fa-2x" @click="changeMenuActive"></i>
+
+          </div>
+
+          <div class="menu" v-if="isMenuActive == true">
+
+            <div class="headerMenu">
+              <a href="#app" @click="changeMenuActive"><img src="img/mainPage/avada-music-logo.png" alt=""></a>
+              <i class="fas fa-times fa-2x" @click="changeMenuActive"></i>
+            </div>
+
+            <ul>
+              <li v-for="item in listaMenu" @click="changeMenuActive"><a :href="item.link">{{item.name}}</a></li>
+            </ul>
+
+          </div>
+
+          <div class="headerCenter">
+
+            <h1>New Album</h1>
+            <h4>Avada Music's latest album, Untold Stories, is out now.</h4>
+          </div>
+
+        </header>
+
+        <main>
+
+          <section class="primaSezione">
+
+            <div class="contenuto">
+
+              <h2>Released Albums</h2>
+              <hr>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus cursus egestas. Cras quis vehicula quam, a tempus velit. Ut feugiat augue in sodales luctus</p>
+
+            </div>
+
+            <div class="containerFoto">
+
+              <img v-for="foto in listaFoto" :src="foto" alt="">
+
+            </div>
+
+          </section>
+
+          <section class="secondaSezione">
+
+            <div v-for="(item, index) in listaAlbums" class="containerAlbum" :class=" index == 1 || index == 3 ? 'bgGrigioChiaro' : 'bgGrigioScuro'">
+
+              <div class="container">
+                <h2>{{item.title}}</h2>
+                <h3>Avada Music</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum sodales ante, ac faucibus metus maximus tincidunt. Phasellus quis arcu ac sem fringilla lobortis. Nunc ac tincidunt purus.</p>
+                <button type="button" class="btn btnRosso"><i class="fab fa-apple"></i> Download on iTunes</button>
+              </div>
+
+              <iframe :src="item.link"></iframe>
+            </div>
+
+          </section>
+
+          <section class="terzaSezione">
+            <h4>View Live Dates</h4>
+          </section>
+
+          <section class="quartaSezione">
+
+            <div class="descrizione">
+
+              <h2>Upcoming Albums</h2>
+              <hr>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus cursus egestas. Cras quis vehicula quam, a tempus velit. Ut feugiat augue in sodales luctus.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum sodales ante, ac faucibus metus maximus tincidunt. Phasellus quis arcu ac sem fringilla lobortis. Nunc ac tincidunt purus, vitae mattis quam. Aliquam a orci in neque luctus finibus. Vivamus in eros in massa fermentum laoreet non at sapien. Integer non faucibus leo. Aenean vel ligula leo. Nulla bibendum molestie viverra. Cras eu venenatis nisi, eu maximus diam. Curabitur vulputate pellentesque dui.</p>
+              <p>Sed sit amet sem turpis. Curabitur cursus lacinia est at interdum. Aenean volutpat, risus id condimentum posuere, metus lacus ultrices turpis, ac blandit magna sem at nisi. Maecenas ornare suscipit posuere. Cras venenatis ultrices tincidunt. Donec sit amet aliquam orci. Phasellus dapibus, est vitae varius consectetur, leo est scelerisque magna, at sodales.</p>
+
+            </div>
+
+            <div class="frase">
+              <p>“I think music in itself is healing. It’s an explosive expression of humanity. It’s something we are all touched by. No matter what culture we’re from, everyone loves music.”</p>
+              <span>MB FLAVOR • MUSIC ENTHUSIAST</span>
+            </div>
+
           </section>
 
         </main>
