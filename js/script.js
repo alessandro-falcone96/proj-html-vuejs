@@ -2,7 +2,7 @@ var app = new Vue (
   {
     el: "#app",
     data: {
-      // Main Page
+      // General
       listaFooterTop: [
         "Home",
         "Meet The Band",
@@ -14,27 +14,33 @@ var app = new Vue (
       listaMenu: [
         {
           name: "Home",
-          link: "#app"
+          link: "#app",
+          isVisible: true
         },
         {
           name: "Meet The Band",
-          link: "#"
+          link: "#",
+          isVisible: false
         },
         {
           name: "Live Dates",
-          link: "#liveDates"
+          link: "#liveDates",
+          isVisible: false
         },
         {
           name: "Latest News",
-          link: "#latestNews"
+          link: "#latestNews",
+          isVisible: false
         },
         {
           name: "Albums",
-          link: "#"
+          link: "#",
+          isVisible: false
         },
         {
           name: "Fans",
-          link: "#"
+          link: "#",
+          isVisible: false
         },
       ],
       listaFooterBottom: [
@@ -49,6 +55,10 @@ var app = new Vue (
         "fa-instagram",
         "fa-youtube"
       ],
+      isMenuActive: false,
+      indexLastActive: 0,
+
+      // Main Page
       listaDate: [
         {
           data: "17/08/2020 GEM FESTIVAL 2020 ANAKLIA, GEORIGA",
@@ -71,8 +81,6 @@ var app = new Vue (
           isActive: false
         },
       ],
-      indexLastActive: 0,
-      isMenuActive: false,
 
       // Live Dates
       listaDateLiveDates: [
@@ -160,8 +168,6 @@ var app = new Vue (
         "img/meetTheBand/about-gallery4.jpg"
       ],
 
-      // Latest News
-
       // Albums
       listaAlbums: [
         {
@@ -185,18 +191,6 @@ var app = new Vue (
           link: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/715430251&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
         },
       ],
-
-      // Fans
-
-      // General
-      isMainPageVisible: false,
-      isLiveDatesVisible: false,
-      isMeetTheBandVisible: false,
-      isLatestNewsVisible: false,
-      isAlbumsVisible: false,
-      isFansVisible: true
-    },
-    mounted: function() {
 
     },
     methods: {
@@ -225,14 +219,10 @@ var app = new Vue (
           this.isMenuActive = false;
         }
       },
-      changePage: function() {
-        if (this.isMainPageVisible == false) {
-          this.isMainPageVisible = true;
-          this.isLiveDatesVisible = false;
-        } else {
-          this.isMainPageVisible = false;
-          this.isLiveDatesVisible = true;
-        }
+      changePage: function(index) {
+        this.listaMenu[this.indexLastActive].isVisible = false;
+        this.indexLastActive = index;
+        this.listaMenu[index].isVisible = true;
       }
     }
   }

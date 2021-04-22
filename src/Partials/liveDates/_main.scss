@@ -102,9 +102,11 @@
   transition: all .3s ease-in-out;
 
   &:hover{
-    color: black;
     background-color: white;
     transition: all .3s ease-in-out;
+  }
+  &:hover a{
+    color: black;
   }
 
   & h4{
@@ -112,5 +114,10 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     font-family: 'PT Sans', sans-serif;
+
+    & a{
+      color: white;
+      text-decoration: none;
+    }
   }
 }

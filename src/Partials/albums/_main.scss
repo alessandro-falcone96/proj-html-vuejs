@@ -3,9 +3,23 @@
 
   & .containerFoto{
     margin-top: 50px;
+    // border: 1px solid green;
+    display: flex;
 
-    & img{
+    & div{
       width: 25%;
+      overflow: hidden;
+
+      & img{
+        width: 100%;
+        transition: 1s;
+        display: block;
+
+        &:hover{
+          transition: 1s;
+          transform: scale(1.1);
+        }
+      }
     }
   }
 }
@@ -67,9 +81,11 @@
   transition: all .3s ease-in-out;
 
   &:hover{
-    color: black;
     background-color: white;
     transition: all .3s ease-in-out;
+  }
+  &:hover a{
+    color: black;
   }
 
   & h4{
@@ -77,6 +93,11 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     font-family: 'PT Sans', sans-serif;
+
+    & a{
+      color: white;
+      text-decoration: none;
+    }
   }
 }
 

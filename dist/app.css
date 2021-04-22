@@ -367,15 +367,21 @@ hr {
   transition: all 0.3s ease-in-out;
 }
 #containerMainPage .terzaSezione:hover, #containerMainPage .sestaSezione:hover {
-  color: black;
   background-color: white;
   transition: all 0.3s ease-in-out;
+}
+#containerMainPage .terzaSezione:hover a, #containerMainPage .sestaSezione:hover a {
+  color: black;
 }
 #containerMainPage .terzaSezione h4, #containerMainPage .sestaSezione h4 {
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-family: "PT Sans", sans-serif;
+}
+#containerMainPage .terzaSezione h4 a, #containerMainPage .sestaSezione h4 a {
+  color: white;
+  text-decoration: none;
 }
 
 #containerMainPage .quartaSezione {
@@ -645,15 +651,21 @@ hr {
   transition: all 0.3s ease-in-out;
 }
 #containerLiveDates .quartaSezione:hover {
-  color: black;
   background-color: white;
   transition: all 0.3s ease-in-out;
+}
+#containerLiveDates .quartaSezione:hover a {
+  color: black;
 }
 #containerLiveDates .quartaSezione h4 {
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-family: "PT Sans", sans-serif;
+}
+#containerLiveDates .quartaSezione h4 a {
+  color: white;
+  text-decoration: none;
 }
 
 #containerLiveDates footer {
@@ -816,8 +828,18 @@ hr {
   width: 23%;
   text-align: center;
 }
-#containerMeetTheBand .primaSezione .containerProfili .profilo img {
+#containerMeetTheBand .primaSezione .containerProfili .profilo div {
   width: 100%;
+  overflow: hidden;
+}
+#containerMeetTheBand .primaSezione .containerProfili .profilo div img {
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+}
+#containerMeetTheBand .primaSezione .containerProfili .profilo div img:hover {
+  transition: 1s;
+  transform: scale(1.1);
 }
 #containerMeetTheBand .primaSezione .containerProfili .profilo h3 {
   color: white;
@@ -831,9 +853,13 @@ hr {
   text-align: center;
   margin: 5px;
   background-color: #EC4857;
+  border-radius: 3px;
 }
 #containerMeetTheBand .primaSezione .containerProfili .profilo ul li a {
   color: #323944;
+}
+#containerMeetTheBand .primaSezione .containerProfili .profilo ul li a:hover {
+  color: white;
 }
 #containerMeetTheBand .primaSezione .containerProfili .profilo p {
   line-height: 30px;
@@ -1237,11 +1263,20 @@ hr {
 #containerLatesNews .terzaSezione .containerArticoli > div {
   width: 48%;
 }
-#containerLatesNews .terzaSezione .containerArticoli > div.sinistra img {
+#containerLatesNews .terzaSezione .containerArticoli > div.sinistra div {
+  width: 100%;
+  overflow: hidden;
+}
+#containerLatesNews .terzaSezione .containerArticoli > div.sinistra div img {
   width: 100%;
   height: 350px;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: 1s;
+}
+#containerLatesNews .terzaSezione .containerArticoli > div.sinistra div img:hover {
+  transition: 1s;
+  transform: scale(1.1);
 }
 #containerLatesNews .terzaSezione .containerArticoli > div.destra .containerFotoDescrizione {
   display: flex;
@@ -1250,12 +1285,18 @@ hr {
 #containerLatesNews .terzaSezione .containerArticoli > div.destra .containerFotoDescrizione .containerFoto {
   height: 150px;
   width: 150px;
+  overflow: hidden;
 }
 #containerLatesNews .terzaSezione .containerArticoli > div.destra .containerFotoDescrizione .containerFoto img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: 1s;
+}
+#containerLatesNews .terzaSezione .containerArticoli > div.destra .containerFotoDescrizione .containerFoto img:hover {
+  transition: 1s;
+  transform: scale(1.1);
 }
 #containerLatesNews .terzaSezione .containerArticoli > div.destra .containerFotoDescrizione .descrizione {
   width: calc(100% - 150px);
@@ -1271,15 +1312,21 @@ hr {
   transition: all 0.3s ease-in-out;
 }
 #containerLatesNews .quartaSezione:hover {
-  color: black;
   background-color: white;
   transition: all 0.3s ease-in-out;
+}
+#containerLatesNews .quartaSezione:hover a {
+  color: black;
 }
 #containerLatesNews .quartaSezione h4 {
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-family: "PT Sans", sans-serif;
+}
+#containerLatesNews .quartaSezione h4 a {
+  color: white;
+  text-decoration: none;
 }
 
 #containerLatesNews footer {
@@ -1432,9 +1479,20 @@ hr {
 }
 #containerAlbums .primaSezione .containerFoto {
   margin-top: 50px;
+  display: flex;
 }
-#containerAlbums .primaSezione .containerFoto img {
+#containerAlbums .primaSezione .containerFoto div {
   width: 25%;
+  overflow: hidden;
+}
+#containerAlbums .primaSezione .containerFoto div img {
+  width: 100%;
+  transition: 1s;
+  display: block;
+}
+#containerAlbums .primaSezione .containerFoto div img:hover {
+  transition: 1s;
+  transform: scale(1.1);
 }
 
 #containerAlbums .secondaSezione .containerAlbum {
@@ -1480,15 +1538,21 @@ hr {
   transition: all 0.3s ease-in-out;
 }
 #containerAlbums .terzaSezione:hover {
-  color: black;
   background-color: white;
   transition: all 0.3s ease-in-out;
+}
+#containerAlbums .terzaSezione:hover a {
+  color: black;
 }
 #containerAlbums .terzaSezione h4 {
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-family: "PT Sans", sans-serif;
+}
+#containerAlbums .terzaSezione h4 a {
+  color: white;
+  text-decoration: none;
 }
 
 #containerAlbums .quartaSezione {
@@ -1735,9 +1799,18 @@ hr {
 #containerFans .terzaSezione .containerFoto {
   display: flex;
 }
-#containerFans .terzaSezione .containerFoto img {
+#containerFans .terzaSezione .containerFoto div {
   width: 25%;
+  overflow: hidden;
+}
+#containerFans .terzaSezione .containerFoto div img {
+  width: 100%;
+  transition: 1s;
   display: block;
+}
+#containerFans .terzaSezione .containerFoto div img:hover {
+  transition: 1s;
+  transform: scale(1.1);
 }
 
 #containerFans .quartaSezione {
@@ -1749,15 +1822,21 @@ hr {
   transition: all 0.3s ease-in-out;
 }
 #containerFans .quartaSezione:hover {
-  color: black;
   background-color: white;
   transition: all 0.3s ease-in-out;
+}
+#containerFans .quartaSezione:hover a {
+  color: black;
 }
 #containerFans .quartaSezione h4 {
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-family: "PT Sans", sans-serif;
+}
+#containerFans .quartaSezione h4 a {
+  color: white;
+  text-decoration: none;
 }
 
 #containerFans footer {

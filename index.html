@@ -16,7 +16,7 @@
 
     <div id="app">
 
-      <div id="containerMainPage" v-if="isMainPageVisible == true">
+      <div id="containerMainPage" v-if="listaMenu[0].isVisible == true">
 
         <header>
 
@@ -30,12 +30,14 @@
           <div class="menu" v-if="isMenuActive == true">
 
             <div class="headerMenu">
-              <a href="#app" @click="changeMenuActive"><img src="img/mainPage/avada-music-logo.png" alt=""></a>
+              <a href="#" @click="changeMenuActive"><img src="img/mainPage/avada-music-logo.png" alt=""></a>
               <i class="fas fa-times fa-2x" @click="changeMenuActive"></i>
             </div>
 
-            <ul>
-              <li v-for="item in listaMenu" @click="changeMenuActive"><a :href="item.link">{{item.name}}</a></li>
+            <ul @click="changeMenuActive">
+
+              <li v-for="(item, index) in listaMenu"><a @click="changePage(index)" href="#">{{item.name}}</a></li>
+
             </ul>
 
           </div>
@@ -45,7 +47,7 @@
             <h1>Untold Stories</h1>
             <h4>There is an untold story behind every favourite song.</h4>
             <button class="btn btnRosso" type="button" name="button">Latest Album</button>
-            <button @click="changePage" class="btn" type="button" name="button">Live Dates</button>
+            <button @click="changePage(2)" class="btn" type="button" name="button">Live Dates</button>
           </div>
 
         </header>
@@ -66,7 +68,7 @@
 
           </section>
 
-          <section class="secondaSezione" id="latestNews">
+          <section class="secondaSezione">
             <div class="contenuto">
               <h2>Latest Band News</h2>
               <hr>
@@ -153,7 +155,7 @@
           </section>
 
           <section class="terzaSezione">
-            <h4>View All Latest News</h4>
+            <h4><a @click="changePage(3)" href="#">View All Latest News</a></h4>
           </section>
 
           <section class="quartaSezione">
@@ -163,7 +165,7 @@
             </div>
           </section>
 
-          <section class="quintaSezione" id="liveDates">
+          <section class="quintaSezione">
             <div class="contenuto">
 
               <h2>Live Dates</h2>
@@ -203,7 +205,7 @@
           </section>
 
           <section class="sestaSezione">
-            <h4>View All Live Dates</h4>
+            <h4><a @click="changePage(2)" href="#">View All Live Dates</a></h4>
           </section>
 
         </main>
@@ -215,7 +217,7 @@
             <img src="img/mainPage/logo_footer.png" alt="">
 
             <ul>
-              <li v-for="item in listaFooterTop"><a href="#">{{item}}</a></li>
+              <li v-for="(item, index) in listaMenu"><a @click="changePage(index)" href="#">{{item.name}}</a></li>
             </ul>
 
           </div>
@@ -240,13 +242,13 @@
 
       </div>
 
-      <div id="containerLiveDates" v-if="isLiveDatesVisible == true">
+      <div id="containerMeetTheBand" v-if="listaMenu[1].isVisible == true">
 
         <header>
 
           <div class="headerTop">
 
-            <a @click="changePage" href=""><img src="img/mainPage/avada-music-logo.png" alt=""></a>
+            <a @click="changePage(0)"><img src="img/mainPage/avada-music-logo.png" alt=""></a>
             <i class="fas fa-bars fa-2x" @click="changeMenuActive"></i>
 
           </div>
@@ -254,12 +256,156 @@
           <div class="menu" v-if="isMenuActive == true">
 
             <div class="headerMenu">
-              <a href="#app" @click="changeMenuActive"><img src="img/mainPage/avada-music-logo.png" alt=""></a>
+              <a href="#" @click="changeMenuActive"><img src="img/mainPage/avada-music-logo.png" alt=""></a>
               <i class="fas fa-times fa-2x" @click="changeMenuActive"></i>
             </div>
 
+            <ul @click="changeMenuActive">
+              <li v-for="(item, index) in listaMenu"><a @click="changePage(index)" href="#">{{item.name}}</a></li>
+            </ul>
+
+          </div>
+
+          <div class="headerCenter">
+
+            <h1>Meet The Band</h1>
+            <h4>Behind the scenes with the people who make the magic happen.</h4>
+
+          </div>
+
+        </header>
+
+        <main>
+
+          <section class="primaSezione">
+
+            <div class="bordoSpesso"></div>
+
+            <div class="contenuto">
+
+              <h2>About Us</h2>
+              <hr>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus cursus egestas. Cras quis vehicula quam, a tempus velit. Ut feugiat augue in sodales luctus</p>
+
+            </div>
+
+            <div class="containerProfili">
+
+              <div v-for="item in listaProfili" class="profilo">
+
+                <div class="">
+                  <img :src="item.foto" alt="">
+                </div>
+                <h3>{{item.nome}}</h3>
+                <ul>
+                  <li v-for="element in listaIconeSocial"><a href="#"><i class="fab fa-lg" :class="element"></i></a></li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus cursus egestas. Cras quis vehicula quam, tempus velit. Ut feugiat augue.</p>
+
+              </div>
+
+            </div>
+
+          </section>
+
+          <section class="secondaSezione">
+
+            <div class="descrizione">
+
+              <h2>Our Story</h2>
+              <hr>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus cursus egestas. Cras quis vehicula quam, a tempus velit. Ut feugiat augue in sodales luctus.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum sodales ante, ac faucibus metus maximus tincidunt. Phasellus quis arcu ac sem fringilla lobortis. Nunc ac tincidunt purus, vitae mattis quam. Aliquam a orci in neque luctus finibus. Vivamus in eros in massa fermentum laoreet non at sapien. Integer non faucibus leo. Aenean vel ligula leo. Nulla bibendum molestie viverra. Cras eu venenatis nisi, eu maximus diam. Curabitur vulputate pellentesque dui.</p>
+              <p>Sed sit amet sem turpis. Curabitur cursus lacinia est at interdum. Aenean volutpat, risus id condimentum posuere, metus lacus ultrices turpis, ac blandit magna sem at nisi. Maecenas ornare suscipit posuere. Cras venenatis ultrices tincidunt. Donec sit amet aliquam orci. Phasellus dapibus, est vitae varius consectetur, leo est scelerisque magna, at sodales.</p>
+
+            </div>
+
+            <div class="frase">
+              <p>“I think music in itself is healing. It’s an explosive expression of humanity. It’s something we are all touched by. No matter what culture we’re from, everyone loves music.”</p>
+              <span>JOHNNY MACK • MUSIC ENTHUSIAST</span>
+            </div>
+
+          </section>
+
+          <section class="terzaSezione">
+
+            <h2>Exclusive Band Interview</h2>
+            <img src="img/meetTheBand/band_interview_play_icon.png" alt="">
+
+          </section>
+
+          <section class="quartaSezione">
+
+            <div class="contenuto">
+
+              <h2>Behind The Scenes</h2>
+              <hr>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus cursus egestas. Cras quis vehicula quam, a tempus velit. Ut feugiat augue in sodales luctus</p>
+
+            </div>
+
+            <div class="containerFoto">
+
+              <img v-for="foto in listaFoto" :src="foto" alt="">
+
+            </div>
+
+          </section>
+
+        </main>
+
+        <footer>
+
+          <div class="footerTop">
+
+            <img src="img/mainPage/logo_footer.png" alt="">
+
             <ul>
-              <li v-for="item in listaMenu" @click="changeMenuActive"><a :href="item.link">{{item.name}}</a></li>
+              <li v-for="(item, index) in listaMenu"><a @click="changePage(index)" href="#">{{item.name}}</a></li>
+            </ul>
+
+          </div>
+
+          <div class="footerBottom">
+
+            <ul>
+              <li v-for="element in listaFooterBottom"><a href="#">{{element}}</a></li>
+            </ul>
+
+            <ul>
+              <li v-for="element in listaIconeSocial"><a href="#"><i class="fab fa-lg" :class="element"></i></a></li>
+            </ul>
+
+          </div>
+
+          <div class="">
+            <a href="#app"><i class="fas fa-chevron-up fa-2x"></i></a>
+          </div>
+
+        </footer>
+
+      </div>
+
+      <div id="containerLiveDates" v-if="listaMenu[2].isVisible == true">
+
+        <header>
+
+          <div class="headerTop">
+
+            <a @click="changePage(0)" href=""><img src="img/mainPage/avada-music-logo.png" alt=""></a>
+            <i class="fas fa-bars fa-2x" @click="changeMenuActive"></i>
+
+          </div>
+
+          <div class="menu" v-if="isMenuActive == true">
+
+            <div class="headerMenu">
+              <a href="#" @click="changeMenuActive"><img src="img/mainPage/avada-music-logo.png" alt=""></a>
+              <i class="fas fa-times fa-2x" @click="changeMenuActive"></i>
+            </div>
+
+            <ul @click="changeMenuActive">
+              <li v-for="(item, index) in listaMenu"><a @click="changePage(index)" href="#">{{item.name}}</a></li>
             </ul>
 
           </div>
@@ -268,7 +414,7 @@
 
             <h1>Live Dates</h1>
             <h4>There is nopthing better than live music. It's raw energy that feeds the soul.</h4>
-            <button @click="changePage" class="btn" type="button" name="button">Latest Album</button>
+            <button @click="changePage(0)" class="btn" type="button" name="button">Latest Album</button>
             <button class="btn btnRosso" type="button" name="button">Live Dates</button>
           </div>
 
@@ -345,7 +491,7 @@
           </section>
 
           <section class="quartaSezione">
-            <h4>View All Latest News</h4>
+            <h4><a @click="changePage(3)" href="#">View All Latest News</a></h4>
           </section>
 
         </main>
@@ -357,7 +503,7 @@
             <img src="img/mainPage/logo_footer.png" alt="">
 
             <ul>
-              <li v-for="item in listaFooterTop"><a href="#">{{item}}</a></li>
+              <li v-for="(item, index) in listaMenu"><a @click="changePage(index)" href="#">{{item.name}}</a></li>
             </ul>
 
           </div>
@@ -382,13 +528,13 @@
 
       </div>
 
-      <div id="containerMeetTheBand" v-if="isMeetTheBandVisible == true">
+      <div id="containerLatesNews" v-if="listaMenu[3].isVisible == true">
 
         <header>
 
           <div class="headerTop">
 
-            <a @click="changePage" href="#app"><img src="img/mainPage/avada-music-logo.png" alt=""></a>
+            <a @click="changePage(0)"><img src="img/mainPage/avada-music-logo.png" alt=""></a>
             <i class="fas fa-bars fa-2x" @click="changeMenuActive"></i>
 
           </div>
@@ -400,150 +546,8 @@
               <i class="fas fa-times fa-2x" @click="changeMenuActive"></i>
             </div>
 
-            <ul>
-              <li v-for="item in listaMenu" @click="changeMenuActive"><a :href="item.link">{{item.name}}</a></li>
-            </ul>
-
-          </div>
-
-          <div class="headerCenter">
-
-            <h1>Meet The Band</h1>
-            <h4>Behind the scenes with the people who make the magic happen.</h4>
-
-          </div>
-
-        </header>
-
-        <main>
-
-          <section class="primaSezione">
-
-            <div class="bordoSpesso"></div>
-
-            <div class="contenuto">
-
-              <h2>About Us</h2>
-              <hr>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus cursus egestas. Cras quis vehicula quam, a tempus velit. Ut feugiat augue in sodales luctus</p>
-
-            </div>
-
-            <div class="containerProfili">
-
-              <div v-for="item in listaProfili" class="profilo">
-
-                <img :src="item.foto" alt="">
-                <h3>{{item.nome}}</h3>
-                <ul>
-                  <li v-for="element in listaIconeSocial"><a href="#"><i class="fab fa-lg" :class="element"></i></a></li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus cursus egestas. Cras quis vehicula quam, tempus velit. Ut feugiat augue.</p>
-
-              </div>
-
-            </div>
-
-          </section>
-
-          <section class="secondaSezione">
-
-            <div class="descrizione">
-
-              <h2>Our Story</h2>
-              <hr>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus cursus egestas. Cras quis vehicula quam, a tempus velit. Ut feugiat augue in sodales luctus.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum sodales ante, ac faucibus metus maximus tincidunt. Phasellus quis arcu ac sem fringilla lobortis. Nunc ac tincidunt purus, vitae mattis quam. Aliquam a orci in neque luctus finibus. Vivamus in eros in massa fermentum laoreet non at sapien. Integer non faucibus leo. Aenean vel ligula leo. Nulla bibendum molestie viverra. Cras eu venenatis nisi, eu maximus diam. Curabitur vulputate pellentesque dui.</p>
-              <p>Sed sit amet sem turpis. Curabitur cursus lacinia est at interdum. Aenean volutpat, risus id condimentum posuere, metus lacus ultrices turpis, ac blandit magna sem at nisi. Maecenas ornare suscipit posuere. Cras venenatis ultrices tincidunt. Donec sit amet aliquam orci. Phasellus dapibus, est vitae varius consectetur, leo est scelerisque magna, at sodales.</p>
-
-            </div>
-
-            <div class="frase">
-              <p>“I think music in itself is healing. It’s an explosive expression of humanity. It’s something we are all touched by. No matter what culture we’re from, everyone loves music.”</p>
-              <span>JOHNNY MACK • MUSIC ENTHUSIAST</span>
-            </div>
-
-          </section>
-
-          <section class="terzaSezione">
-
-            <h2>Exclusive Band Interview</h2>
-            <img src="img/meetTheBand/band_interview_play_icon.png" alt="">
-
-          </section>
-
-          <section class="quartaSezione">
-
-            <div class="contenuto">
-
-              <h2>Behind The Scenes</h2>
-              <hr>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus cursus egestas. Cras quis vehicula quam, a tempus velit. Ut feugiat augue in sodales luctus</p>
-
-            </div>
-
-            <div class="containerFoto">
-
-              <img v-for="foto in listaFoto" :src="foto" alt="">
-
-            </div>
-
-          </section>
-
-        </main>
-
-        <footer>
-
-          <div class="footerTop">
-
-            <img src="img/mainPage/logo_footer.png" alt="">
-
-            <ul>
-              <li v-for="item in listaFooterTop"><a href="#">{{item}}</a></li>
-            </ul>
-
-          </div>
-
-          <div class="footerBottom">
-
-            <ul>
-              <li v-for="element in listaFooterBottom"><a href="#">{{element}}</a></li>
-            </ul>
-
-            <ul>
-              <li v-for="element in listaIconeSocial"><a href="#"><i class="fab fa-lg" :class="element"></i></a></li>
-            </ul>
-
-          </div>
-
-          <div class="">
-            <a href="#app"><i class="fas fa-chevron-up fa-2x"></i></a>
-          </div>
-
-        </footer>
-
-      </div>
-
-      <div id="containerLatesNews" v-if="isLatestNewsVisible == true">
-
-        <header>
-
-          <div class="headerTop">
-
-            <a href="#app"><img src="img/mainPage/avada-music-logo.png" alt=""></a>
-            <i class="fas fa-bars fa-2x" @click="changeMenuActive"></i>
-
-          </div>
-
-          <div class="menu" v-if="isMenuActive == true">
-
-            <div class="headerMenu">
-              <a href="#app" @click="changeMenuActive"><img src="img/mainPage/avada-music-logo.png" alt=""></a>
-              <i class="fas fa-times fa-2x" @click="changeMenuActive"></i>
-            </div>
-
-            <ul>
-              <li v-for="item in listaMenu" @click="changeMenuActive"><a :href="item.link">{{item.name}}</a></li>
+            <ul @click="changeMenuActive">
+              <li v-for="(item, index) in listaMenu"><a @click="changePage(index)" href="#">{{item.name}}</a></li>
             </ul>
 
           </div>
@@ -667,7 +671,9 @@
             <div class="containerArticoli">
 
               <div class="sinistra">
-                <img src="img/latestNews/technologyMusic.jpg" alt="">
+                <div class="">
+                  <img src="img/latestNews/technologyMusic.jpg" alt="">
+                </div>
                 <h3 class="title">Technology and music</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               </div>
@@ -707,7 +713,7 @@
           </div>
 
           <section class="quartaSezione">
-            <h4>View All Latest News</h4>
+            <h4><a @click="changePage(2)" href="#">View All Live Dates</a></h4>
           </section>
 
         </main>
@@ -719,7 +725,7 @@
             <img src="img/mainPage/logo_footer.png" alt="">
 
             <ul>
-              <li v-for="item in listaFooterTop"><a href="#">{{item}}</a></li>
+              <li v-for="(item, index) in listaMenu"><a @click="changePage(index)" href="#">{{item.name}}</a></li>
             </ul>
 
           </div>
@@ -744,13 +750,13 @@
 
       </div>
 
-      <div id="containerAlbums" v-if="isAlbumsVisible == true">
+      <div id="containerAlbums" v-if="listaMenu[4].isVisible == true">
 
         <header>
 
           <div class="headerTop">
 
-            <a href="#app"><img src="img/mainPage/avada-music-logo.png" alt=""></a>
+            <a @click="changePage(0)"><img src="img/mainPage/avada-music-logo.png" alt=""></a>
             <i class="fas fa-bars fa-2x" @click="changeMenuActive"></i>
 
           </div>
@@ -762,8 +768,8 @@
               <i class="fas fa-times fa-2x" @click="changeMenuActive"></i>
             </div>
 
-            <ul>
-              <li v-for="item in listaMenu" @click="changeMenuActive"><a :href="item.link">{{item.name}}</a></li>
+            <ul @click="changeMenuActive">
+              <li v-for="(item, index) in listaMenu"><a @click="changePage(index)" href="#">{{item.name}}</a></li>
             </ul>
 
           </div>
@@ -790,7 +796,9 @@
 
             <div class="containerFoto">
 
-              <img v-for="foto in listaFoto" :src="foto" alt="">
+              <div v-for="foto in listaFoto"  class="">
+                <img :src="foto" alt="">
+              </div>
 
             </div>
 
@@ -813,7 +821,7 @@
           </section>
 
           <section class="terzaSezione">
-            <h4>View Live Dates</h4>
+            <h4><a @click="changePage(2)" href="#">View All Live Dates</a></h4>
           </section>
 
           <section class="quartaSezione">
@@ -844,7 +852,7 @@
             <img src="img/mainPage/logo_footer.png" alt="">
 
             <ul>
-              <li v-for="item in listaFooterTop"><a href="#">{{item}}</a></li>
+              <li v-for="(item, index) in listaMenu"><a @click="changePage(index)" href="#">{{item.name}}</a></li>
             </ul>
 
           </div>
@@ -869,13 +877,13 @@
 
       </div>
 
-      <div id="containerFans" v-if="isFansVisible == true">
+      <div id="containerFans" v-if="listaMenu[5].isVisible == true">
 
         <header>
 
           <div class="headerTop">
 
-            <a href="#app"><img src="img/mainPage/avada-music-logo.png" alt=""></a>
+            <a @click="changePage(0)"><img src="img/mainPage/avada-music-logo.png" alt=""></a>
             <i class="fas fa-bars fa-2x" @click="changeMenuActive"></i>
 
           </div>
@@ -887,8 +895,8 @@
               <i class="fas fa-times fa-2x" @click="changeMenuActive"></i>
             </div>
 
-            <ul>
-              <li v-for="item in listaMenu" @click="changeMenuActive"><a :href="item.link">{{item.name}}</a></li>
+            <ul @click="changeMenuActive">
+              <li v-for="(item, index) in listaMenu"><a @click="changePage(index)" href="#">{{item.name}}</a></li>
             </ul>
 
           </div>
@@ -955,14 +963,16 @@
 
             <div class="containerFoto">
 
-              <img v-for="foto in listaFoto" :src="foto" alt="">
+              <div v-for="foto in listaFoto" class="">
+                <img :src="foto" alt="">
+              </div>
 
             </div>
 
           </section>
 
           <section class="quartaSezione">
-            <h4>View All Latest News</h4>
+            <h4><a @click="changePage(3)" href="#">View All Latest News</a></h4>
           </section>
 
         </main>
@@ -974,7 +984,7 @@
             <img src="img/mainPage/logo_footer.png" alt="">
 
             <ul>
-              <li v-for="item in listaFooterTop"><a href="#">{{item}}</a></li>
+              <li v-for="(item, index) in listaMenu"><a @click="changePage(index)" href="#">{{item.name}}</a></li>
             </ul>
 
           </div>
