@@ -162,10 +162,10 @@ var app = new Vue (
         },
       ],
       listaFoto: [
-        "img/meetTheBand/about-gallery1.jpg",
-        "img/meetTheBand/about-gallery2.jpg",
-        "img/meetTheBand/about-gallery3.jpg",
-        "img/meetTheBand/about-gallery4.jpg"
+        "img/general/about-gallery1.jpg",
+        "img/general/about-gallery2.jpg",
+        "img/general/about-gallery3.jpg",
+        "img/general/about-gallery4.jpg"
       ],
 
       // Albums
