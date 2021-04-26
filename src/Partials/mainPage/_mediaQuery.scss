@@ -1,0 +1,115 @@
+@media only screen and (max-width: 992px) {
+
+  // Header
+  #containerMainPage header{
+
+      & .headerTop{
+        height: 300px;
+
+        & img{
+          height: 150px;
+        }
+      }
+
+      & .menu{
+
+        & .headerMenu{
+          height: 300px;
+
+          & img{
+            height: 150px;
+          }
+        }
+
+        & ul li{
+          padding: 45px 0px;
+          font-size: $fontMedioGrande;
+        }
+      }
+
+      & .headerCenter{
+
+        & h1{
+          font-size: $fontMedioGrande;
+        }
+
+        & h4{
+          font-size: $fontMedioMedioGrande;
+          width: 80%;
+          margin: auto;
+        }
+      }
+  }
+
+  // Main
+  #containerMainPage .secondaSezione{
+
+    & .containerNews{
+      width: 90%;
+      display: block;
+
+      & .containerSinistra{
+        width: 100%;
+        margin-bottom: 50px;
+
+        & div{
+
+          & h3{
+            font-size: $fontMedio;
+          }
+
+          & p{
+            font-size: $fontMedio;
+          }
+
+          &.technologyMusic, &.rockFlavour{
+            height: 700px;
+            object-fit: contain;
+          }
+
+          &.guitarWeeps, &.soundsBetter {
+            width: 100%;
+          }
+        }
+      }
+
+      & .containerDestra{
+        width: 100%;
+
+        & div{
+
+          & h3{
+            font-size: $fontMedio;
+          }
+
+          & p{
+            font-size: $fontMedio;
+          }
+        }
+
+      }
+    }
+  }
+
+  #containerMainPage .terzaSezione, #containerMainPage .sestaSezione{
+    padding: 150px 0px;
+
+    & h4{
+      font-size: $fontMedio;
+    }
+  }
+
+  #containerMainPage .quartaSezione{
+    height: 100vh;
+
+    & div{
+      width: 90%;
+
+      & p{
+        font-size: $fontMedioMedioGrande;
+        line-height: 80px;
+      }
+    }
+  }
+
+}

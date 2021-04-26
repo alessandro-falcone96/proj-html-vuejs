@@ -96,6 +96,11 @@ hr {
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
 }
+.containerDate ul li .containerDataLuogoConcerto {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+}
 .containerDate ul li i {
   color: white;
   padding: 8px;
@@ -201,6 +206,65 @@ footer div:last-child:hover {
   background-color: #805876;
 }
 
+@media only screen and (max-width: 992px) {
+  .contenuto {
+    width: 80%;
+  }
+  .contenuto p {
+    font-size: 30px;
+    line-height: 65px;
+  }
+
+  .btn {
+    font-size: 30px;
+    margin: 0px 15px;
+  }
+
+  hr {
+    width: 50%;
+  }
+
+  h2 {
+    padding-top: 100px;
+  }
+
+  .containerDate ul li {
+    font-size: 30px;
+  }
+  .containerDate .containerLuogoConcerto {
+    flex-wrap: wrap;
+  }
+  .containerDate .containerLuogoConcerto img {
+    padding-top: 25px;
+    margin: auto;
+  }
+  .containerDate .containerLuogoConcerto div {
+    width: 100%;
+  }
+  .containerDate .containerLuogoConcerto div h4 {
+    padding: 30px 0px;
+  }
+
+  footer .footerTop {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  footer .footerTop ul {
+    width: 100%;
+    text-align: center;
+  }
+  footer .footerTop ul li {
+    font-size: 30px;
+    padding: 10px 0px;
+  }
+  footer .footerBottom {
+    flex-wrap: wrap;
+  }
+  footer .footerBottom ul {
+    width: 100%;
+    text-align: center;
+  }
+}
 #containerMainPage header {
   height: 100vh;
   background-image: url("../img/mainPage/home_slider.jpg");
@@ -1579,4 +1643,81 @@ footer div:last-child:hover {
 #containerFans .quartaSezione h4 a {
   color: white;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 992px) {
+  #containerMainPage header .headerTop {
+    height: 300px;
+  }
+  #containerMainPage header .headerTop img {
+    height: 150px;
+  }
+  #containerMainPage header .menu .headerMenu {
+    height: 300px;
+  }
+  #containerMainPage header .menu .headerMenu img {
+    height: 150px;
+  }
+  #containerMainPage header .menu ul li {
+    padding: 45px 0px;
+    font-size: 60px;
+  }
+  #containerMainPage header .headerCenter h1 {
+    font-size: 60px;
+  }
+  #containerMainPage header .headerCenter h4 {
+    font-size: 45px;
+    width: 80%;
+    margin: auto;
+  }
+
+  #containerMainPage .secondaSezione .containerNews {
+    width: 90%;
+    display: block;
+  }
+  #containerMainPage .secondaSezione .containerNews .containerSinistra {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  #containerMainPage .secondaSezione .containerNews .containerSinistra div h3 {
+    font-size: 30px;
+  }
+  #containerMainPage .secondaSezione .containerNews .containerSinistra div p {
+    font-size: 30px;
+  }
+  #containerMainPage .secondaSezione .containerNews .containerSinistra div.technologyMusic, #containerMainPage .secondaSezione .containerNews .containerSinistra div.rockFlavour {
+    height: 700px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  #containerMainPage .secondaSezione .containerNews .containerSinistra div.guitarWeeps, #containerMainPage .secondaSezione .containerNews .containerSinistra div.soundsBetter {
+    width: 100%;
+  }
+  #containerMainPage .secondaSezione .containerNews .containerDestra {
+    width: 100%;
+  }
+  #containerMainPage .secondaSezione .containerNews .containerDestra div h3 {
+    font-size: 30px;
+  }
+  #containerMainPage .secondaSezione .containerNews .containerDestra div p {
+    font-size: 30px;
+  }
+
+  #containerMainPage .terzaSezione, #containerMainPage .sestaSezione {
+    padding: 150px 0px;
+  }
+  #containerMainPage .terzaSezione h4, #containerMainPage .sestaSezione h4 {
+    font-size: 30px;
+  }
+
+  #containerMainPage .quartaSezione {
+    height: 100vh;
+  }
+  #containerMainPage .quartaSezione div {
+    width: 90%;
+  }
+  #containerMainPage .quartaSezione div p {
+    font-size: 45px;
+    line-height: 80px;
+  }
 }

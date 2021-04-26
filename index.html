@@ -23,6 +23,7 @@
             <a href="#app"><img src="img/general/avada-music-logo.png" alt=""></a>
             <i class="fas fa-bars fa-2x" @click="changeMenuActive"></i>
           </div>
+
           <div class="menu" v-if="isMenuActive == true">
             <div class="headerMenu">
               <a href="#" @click="changeMenuActive"><img src="img/general/avada-music-logo.png" alt=""></a>
@@ -32,6 +33,7 @@
               <li v-for="(item, index) in listaMenu"><a @click="changePage(index)" href="#">{{item.name}}</a></li>
             </ul>
           </div>
+
           <div class="headerCenter">
             <h1>Untold Stories</h1>
             <h4>There is an untold story behind every favourite song.</h4>
@@ -145,9 +147,11 @@
             <div class="containerDate">
               <ul>
                 <li v-for="(item, index) in listaDate" @click="changeActiveIndexMainPage(index)">
-                  <i v-if="item.isActive == true" class="fas fa-minus fa-xs"></i>
-                  <i v-else class="fas fa-plus fa-xs"></i>
-                  {{item.data}}
+                  <div class="containerDataLuogoConcerto">
+                    <i v-if="item.isActive == true" class="fas fa-minus fa-xs"></i>
+                    <i v-else class="fas fa-plus fa-xs"></i>
+                    <span>{{item.data}}</span>
+                  </div>
                   <div class="containerLuogoConcerto" v-if="item.isActive == true">
                     <img src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDsUcTjt43mTheN9ruCsQVgBE-wgN6_AfY&language=en&center=New+York&maptype=terrain&zoom=14&size=370x250&markers=icon:https://avada.theme-fusion.com/music/wp-content/uploads/sites/68/2017/09/custom_marker-1.png|New+York&scale=2" alt="">
                     <div class="">

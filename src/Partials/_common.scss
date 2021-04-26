@@ -96,6 +96,13 @@ hr{
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
 
+    & .containerDataLuogoConcerto{
+      // border: 1px solid yellow;
+      width: 95%;
+      display: flex;
+      justify-content: space-between;
+    }
+
     & i{
       color: white;
       padding: 8px;
@@ -172,9 +179,6 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-
-
   }
 
   & .footerBottom{
@@ -231,5 +235,81 @@ footer{
     &:hover{
       background-color: $coloreRossiccio;
     }
+  }
+}
+
+// Media Query
+@media only screen and (max-width: 992px) {
+  .contenuto{
+    width: 80%;
+
+    & p{
+      font-size: $fontMedio;
+      line-height: 65px;
+    }
+  }
+
+  .btn{
+    font-size: $fontMedio;
+    margin: 0px 15px;
+  }
+
+  hr{
+    width: 50%;
+  }
+
+  h2{
+    padding-top: 100px;
+  }
+
+  .containerDate{
+
+    & ul li{
+      font-size: $fontMedio;
+    }
+
+    & .containerLuogoConcerto{
+      flex-wrap: wrap;
+
+      & img{
+        padding-top: 25px;
+        margin: auto;
+      }
+
+      & div{
+        width: 100%;
+
+        & h4{
+          padding: 30px 0px;
+        }
+      }
+    }
+  }
+
+  footer{
+
+    & .footerTop{
+      flex-wrap: wrap;
+      justify-content: center;
+
+      & ul{
+        width: 100%;
+        text-align: center;
+
+        & li{
+          font-size: $fontMedio;
+          padding: 10px 0px;
+        }
+      }
+    }
+
+    & .footerBottom{
+      flex-wrap: wrap;
+      & ul{
+        width: 100%;
+        text-align: center;
+      }
+    }
+
   }
 }
